@@ -25,6 +25,20 @@ public class InventoryObject : ScriptableObject
             SetEmptySlot(_item, amount);
         }
     }
+    public bool UseItem(int index)
+    {
+        if (Container.Items[index].amount <= 1)
+        {
+            RemoveItem(Container.Items[index].Item);
+            return true;
+        }
+        else if (Container.Items[index].Item.type != itemType.Weapon)
+        {
+            Container.Items[index].amount--;
+            return false;
+        }
+        return false;
+    }
     public void MoveItem(InventorySlot item1, InventorySlot item2)
     {
         InventorySlot temp = new InventorySlot(item2.Item, item2.amount,item2.id);

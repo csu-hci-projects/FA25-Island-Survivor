@@ -1,6 +1,6 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/CSU/CS/CS462/CS462 Project/Packages/manifest.json
+    m_FilePath: D:/Github/FA25-Island-Survivor/CS462 Project/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -8,7 +8,7 @@ m_ProjectFiles:
       ticks: 638943261825283312
     m_Hash: 1227092842
   m_LockFileStatus:
-    m_FilePath: D:/CSU/CS/CS462/CS462 Project/Packages/packages-lock.json
+    m_FilePath: D:/Github/FA25-Island-Survivor/CS462 Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -19,7 +19,7 @@ m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: D:/CSU/CS/CS462/CS462 Project/Packages
+m_ProjectPath: D:/Github/FA25-Island-Survivor/CS462 Project/Packages
 m_EditorVersion: 6000.0.35f1 (9a3bc604008a)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.2d.sprite@6e37a90069af
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.2d.sprite@6e37a90069af
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -97,7 +97,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.5
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.ai.navigation@9f76b145f0a8
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.ai.navigation@9f76b145f0a8
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -215,7 +215,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.18
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.burst@616862665d8c
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.burst@616862665d8c
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -447,7 +447,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.10.3
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.cinemachine@dcc61ebd6655
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.cinemachine@dcc61ebd6655
   assetPath: Packages/com.unity.cinemachine
   name: com.unity.cinemachine
   displayName: Cinemachine
@@ -648,7 +648,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.9.3
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.collab-proxy@ab839cc7d2ad
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Unity Version Control
@@ -820,7 +820,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.5.1
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.collections@56bff8827a7e
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.collections@56bff8827a7e
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -912,6 +912,7 @@ m_ResolvedPackages:
     - 2.6.0-exp.2
     - 2.6.0-pre.3
     - 2.6.0-pre.4
+    - 2.6.2
     compatible:
     - 2.5.1
     - 2.5.2
@@ -920,6 +921,7 @@ m_ResolvedPackages:
     - 2.6.0-exp.2
     - 2.6.0-pre.3
     - 2.6.0-pre.4
+    - 2.6.2
     recommended: 2.5.7
     deprecated: []
   dependencies:
@@ -999,7 +1001,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.5
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -1078,7 +1080,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.31
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.ide.rider@7921be93db40
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.ide.rider@7921be93db40
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -1206,7 +1208,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.22
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -1314,7 +1316,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.11.2
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.inputsystem@3c4a97c3950f
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.inputsystem@3c4a97c3950f
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -1386,6 +1388,7 @@ m_ResolvedPackages:
     - 1.14.0
     - 1.14.1
     - 1.14.2
+    - 1.15.0
     compatible:
     - 1.11.2
     - 1.12.0
@@ -1394,6 +1397,7 @@ m_ResolvedPackages:
     - 1.14.0
     - 1.14.1
     - 1.14.2
+    - 1.15.0
     recommended: 1.11.2
     deprecated: []
   dependencies:
@@ -1477,7 +1481,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.3.2
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.mathematics@8017b507cc74
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -1511,9 +1515,11 @@ m_ResolvedPackages:
     - 1.2.6
     - 1.3.1
     - 1.3.2
+    - 1.3.3
     compatible:
     - 1.3.2
-    recommended: 1.3.2
+    - 1.3.3
+    recommended: 1.3.3
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -1566,7 +1572,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.multiplayer.center@f502d8ac613f
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.multiplayer.center@f502d8ac613f
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -1656,7 +1662,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.11.4
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -1686,10 +1692,12 @@ m_ResolvedPackages:
     - 1.10.2
     - 1.11.4
     - 1.11.5
+    - 1.11.6
     compatible:
     - 1.11.4
     - 1.11.5
-    recommended: 1.11.5
+    - 1.11.6
+    recommended: 1.11.6
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -1738,7 +1746,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 0.22.0-preview
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.package-validation-suite@536239bd7458
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.package-validation-suite@536239bd7458
   assetPath: Packages/com.unity.package-validation-suite
   name: com.unity.package-validation-suite
   displayName: Package Validation Suite
@@ -2064,7 +2072,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.render-pipelines.core@a50b3570474f
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.render-pipelines.core@a50b3570474f
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -2278,7 +2286,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.render-pipelines.universal@39c80789bb81
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.render-pipelines.universal@39c80789bb81
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -2440,7 +2448,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal RP Config
@@ -2538,7 +2546,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f
   assetPath: Packages/com.unity.rendering.light-transport
   name: com.unity.rendering.light-transport
   displayName: Unity Light Transport Library
@@ -2634,7 +2642,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.9.2
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.searcher@90d011a70418
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.searcher@90d011a70418
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -2720,7 +2728,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.shadergraph@911117698220
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.shadergraph@911117698220
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -2923,7 +2931,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.4.5
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.test-framework@0a21eb82d95c
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.test-framework@0a21eb82d95c
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -3088,7 +3096,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.3
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -3227,7 +3235,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.7
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.timeline@c58b4ee65782
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.timeline@c58b4ee65782
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -3415,7 +3423,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.ugui@24b10291b18f
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.ugui@24b10291b18f
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -3510,7 +3518,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.5
   source: 1
-  resolvedPath: D:\CSU\CS\CS462\CS462 Project\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
+  resolvedPath: D:\Github\FA25-Island-Survivor\CS462 Project\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting

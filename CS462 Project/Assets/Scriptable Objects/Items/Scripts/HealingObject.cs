@@ -11,16 +11,22 @@ public class HealingObject : ItemObject
         type = itemType.Healing;
     }
     override
-    public void Use()
+    public bool Use()
     {
         Debug.Log("Using Healing");
-        if (PlayerHealth.currentHealth + healAmount > PlayerHealth.maxHealth)
+        if(PlayerHealth.currentHealth != 100)
         {
-            PlayerHealth.currentHealth = PlayerHealth.maxHealth;
+            if (PlayerHealth.currentHealth + healAmount > PlayerHealth.maxHealth)
+            {
+                PlayerHealth.currentHealth = PlayerHealth.maxHealth;
+            }
+            else
+            {
+                PlayerHealth.currentHealth += healAmount;
+            }
+            return true;
         }
-        else
-        {
-            PlayerHealth.currentHealth += healAmount;
-        }
+        return false;
+        
     }
 }

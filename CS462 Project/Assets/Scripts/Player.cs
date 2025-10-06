@@ -1,4 +1,6 @@
+using System.Linq;
 using StarterAssets;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -12,6 +14,9 @@ public class Player : MonoBehaviour
     public InventoryObject inventory;
     public InventoryObject hotbar;
     public Camera cam;
+    int currentSlot = -1;
+    public LayerMask doorLayerMask;
+    public TextMeshProUGUI ammoGUI;
 
     public MouseItem mouseItem = new MouseItem();
     public void OnTriggerEnter(Collider other)
@@ -22,7 +27,30 @@ public class Player : MonoBehaviour
             inventory.addItem(new Item(item.item), item.amount);
             Destroy(other.gameObject);
         }
-        
+        var secondtype = other.GetComponent<AmmoItem>();
+        if (secondtype)
+        {
+            Debug.Log("component AmmoItem Found");
+            int ID = secondtype.ammo.weapon.ID;
+            for (int i = 0; i < inventory.Container.Items.Length; i++)
+            {
+                if (inventory.Container.Items[i].id == ID)
+                {
+                    Debug.Log("ID found, adding ammo count");
+                    secondtype.ammo.weapon.ammo += secondtype.ammo.ammoCount;
+                    Destroy(other.gameObject);
+                }
+            }
+            for (int i = 0; i < hotbar.Container.Items.Length; i++)
+            {
+                if (hotbar.Container.Items[i].id == ID) 
+                {
+                    Debug.Log("ID found, adding ammo count");
+                    secondtype.ammo.weapon.ammo += secondtype.ammo.ammoCount;
+                    Destroy(other.gameObject);
+                }
+            }
+        }
     }
     private void OnApplicationQuit()
     {
@@ -111,10 +139,26 @@ public class Player : MonoBehaviour
                 {
                     EquippedItem.UseItem();
                     GetComponent<SpeedManager>().UseEquipment((EquipmentObject)EquippedItem.itemObject);
+                    bool removeItem = hotbar.UseItem(currentSlot);
+                    if (removeItem)
+                    {
+                        Destroy(EquippedMesh);
+                        EquippedItem = null;
+                    }
+                    return;
                 }
                 if(EquippedItem.type == itemType.Healing || EquippedItem.type == itemType.Food)
                 {
-                    EquippedItem.UseItem();
+                    if (EquippedItem.UseItem())
+                    {
+                        bool removeItem = hotbar.UseItem(currentSlot);
+                        if (removeItem)
+                        {
+                            Destroy(EquippedMesh);
+                            EquippedItem = null;
+                        }
+                    }
+                    return;
                 }
                 //Subtract 1 value from inventory location if not weapon
                 if (EquippedItem.type == itemType.Weapon)
@@ -126,6 +170,39 @@ public class Player : MonoBehaviour
                         //play muzzle flash particle
                     }
                 }
+                if(EquippedItem.type == itemType.Key)
+                {
+                    Debug.Log("Using Key");
+                    Collider[] doors = Physics.OverlapBox(transform.position, new Vector3(4,2,4), Quaternion.identity, doorLayerMask);
+                    foreach (Collider door in doors)
+                    {
+                        Debug.Log("Key Interacting With Door");
+                        KeyObject key = (KeyObject)EquippedItem.itemObject;
+                        if (door.GetComponent<Door>().doorID.Contains(key.doorID))
+                        {
+                            door.GetComponent<Door>().openDoor(key.doorID);
+                            bool removeItem = hotbar.UseItem(currentSlot);
+                            if (removeItem)
+                            {
+                                Destroy(EquippedMesh);
+                                EquippedItem = null;
+                            }
+                        }
+                    }
+                    return;
+                }
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if(EquippedItem != null)
+            {
+                if(EquippedItem.type == itemType.Weapon)
+                {
+                    WeaponObject weapon = (WeaponObject)EquippedItem.itemObject;
+                    //play Reload animation
+                    weapon.Reload();
+                }
             }
         }
     }
@@ -136,9 +213,11 @@ public class Player : MonoBehaviour
             if (EquippedItem != null)
             {
                 Destroy(EquippedMesh);
+                ammoGUI.gameObject.SetActive(false);
                 if (EquippedItem.ID == hotbar.Container.Items[slot].Item.ID)
                 {
                     EquippedItem = null;
+                    currentSlot = -1;
                     return;
                 }
             }
@@ -148,7 +227,12 @@ public class Player : MonoBehaviour
          
             EquippedMesh.transform.localPosition = new Vector3(1.2f, -0.5f, 0.75f);
             EquippedMesh.transform.localRotation = Quaternion.identity;
-
+            currentSlot = slot;
+            if (EquippedItem.type == itemType.Weapon)
+            {
+                ammoGUI.gameObject.SetActive(true);
+                ammoGUI.gameObject.GetComponent<AmmoInterface>().currentWeapon = (WeaponObject)EquippedItem.itemObject;
+            }
         }
     }
 }

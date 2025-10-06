@@ -10,16 +10,22 @@ public class FoodObject : ItemObject
         type = itemType.Food;
     }
     override
-    public void Use()
+    public bool Use()
     {
         Debug.Log("Using Food");
-        if (restoreStaminaValue + Hunger.currentHealth > Hunger.maxHealth)
+        if(Hunger.currentHealth < 300)
         {
-            Hunger.currentHealth = Hunger.maxHealth;
+            if (restoreStaminaValue + Hunger.currentHealth > Hunger.maxHealth)
+            {
+                Hunger.currentHealth = Hunger.maxHealth;
+            }
+            else
+            {
+                Hunger.currentHealth += restoreStaminaValue;
+            }
+            return true;
         }
-        else
-        {
-            Hunger.currentHealth += restoreStaminaValue;
-        }
+        return false;
+        
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 public class EnemyPathfind : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EnemyPathfind : MonoBehaviour
     public Vector3 walkPoint;
     public bool walkPointSet;
     public float walkPointRange;
+    private bool isPatrolling;
 
     public float currentCooldown;
     public GameObject projectile;
@@ -42,16 +44,44 @@ public class EnemyPathfind : MonoBehaviour
     private void Update()
     {
         currentCooldown -= Time.deltaTime;
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        Collider[] sightHits = Physics.OverlapSphere(transform.position, sightRange, whatIsPlayer);
+        playerInSightRange = false;
+
+        foreach (Collider hit in sightHits)
+        {
+            Vector3 directionToTarget = (hit.transform.position - transform.position).normalized;
+
+            // Check if target is within forward-facing semisphere (90° for half-sphere)
+            float angle = Vector3.Angle(transform.forward, directionToTarget);
+            if (angle < 90f / 2f) // adjust 90f to whatever forward field-of-view you want
+            {
+                playerInSightRange = true;
+                break;
+            }
+        }
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
+        
+        if (!playerInSightRange && !playerInAttackRange && !isPatrolling) StartCoroutine(PatrolRoutine());
         if(playerInSightRange &&  !playerInAttackRange) chasePlayer();
         if(playerInAttackRange && playerInSightRange) attackPlayer();
+    }
+    private IEnumerator PatrolRoutine()
+    {
+        isPatrolling = true;
+
+        // Wait a random interval before moving
+        float waitTime = Random.Range(1f, 5f);
+        yield return new WaitForSeconds(waitTime);
+
+        Patroling();
+
+        isPatrolling = false; // allows next patrol scheduling
     }
     private void Patroling()
     {
         if (!walkPointSet) searchWalkPoint();
+        
         if(walkPointSet) agent.SetDestination(walkPoint);
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;

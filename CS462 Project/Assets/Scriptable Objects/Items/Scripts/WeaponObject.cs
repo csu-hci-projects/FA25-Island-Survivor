@@ -23,9 +23,10 @@ public class WeaponObject : ItemObject
     public void Awake()
     {
         type = itemType.Weapon;
+        bulletCount = magSize;
     }
     override
-    public void Use()
+    public bool Use()
     {
         if (weaponType == weaponType.Melee)
         {
@@ -38,7 +39,7 @@ public class WeaponObject : ItemObject
             Debug.Log("Using Ranged Weapon");
             bulletCount--;
         }
-        
+        return true;
     }
     public void Reload()
     {

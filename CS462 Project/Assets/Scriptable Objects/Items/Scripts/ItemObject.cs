@@ -6,7 +6,8 @@ public enum itemType
     Food,
     Weapon,
     Equipment,
-    Healing
+    Healing,
+    Key
 }
 public abstract class ItemObject : ScriptableObject
 {
@@ -17,7 +18,7 @@ public abstract class ItemObject : ScriptableObject
     [TextArea(15,20)]
     public string description;
 
-    public abstract void Use();
+    public abstract bool Use();
     
     
 }
@@ -48,8 +49,8 @@ public class Item
         playerHoldingObject = null;
         itemObject = null;
     }
-    public void UseItem()
+    public bool UseItem()
     {
-        itemObject.Use();
+        return itemObject.Use();
     }
 }

@@ -12,9 +12,9 @@ public class EquipmentObject : ItemObject
         type = itemType.Equipment;
     }
     override
-    public void Use()
+    public bool Use()
     {
-
+        return true;
     }
     
 }
