@@ -13,6 +13,18 @@ PrefabInstance:
       value: Med Kit Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9042681251511788607, guid: ba2f93dc7c0313743ba52829b3758af6, type: 3}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042681251511788607, guid: ba2f93dc7c0313743ba52829b3758af6, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042681251511788607, guid: ba2f93dc7c0313743ba52829b3758af6, type: 3}
+      propertyPath: m_Size.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042681251511788607, guid: ba2f93dc7c0313743ba52829b3758af6, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}

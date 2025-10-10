@@ -53,6 +53,14 @@ PrefabInstance:
       value: Machete Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5834995455688978593, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834995455688978593, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
+      propertyPath: m_Size.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834995455688978593, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}

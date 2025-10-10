@@ -56,13 +56,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandage Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 83934012684406070, guid: 362d62b1b5c10a047a4263b2fe9c3157, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4997834249978073194, guid: 362d62b1b5c10a047a4263b2fe9c3157, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7428215701704337941}
+    - targetCorrespondingSourceObject: {fileID: 4997834249978073194, guid: 362d62b1b5c10a047a4263b2fe9c3157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7293443813930700462}
   m_SourcePrefab: {fileID: 100100000, guid: 362d62b1b5c10a047a4263b2fe9c3157, type: 3}
 --- !u!1 &6660241413353534234 stripped
 GameObject:
@@ -83,3 +87,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d03515ebdfa1a8846b5346255be507af, type: 2}
   amount: 1
+--- !u!65 &7293443813930700462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6660241413353534234}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

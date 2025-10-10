@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEditor.Progress;
 
 public class Player : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     int currentSlot = -1;
     public LayerMask doorLayerMask;
     public TextMeshProUGUI ammoGUI;
+    public GroundItem touching_item;
 
     public MouseItem mouseItem = new MouseItem();
     public void OnTriggerEnter(Collider other)
@@ -24,8 +26,8 @@ public class Player : MonoBehaviour
         var item = other.GetComponent<GroundItem>();
         if (item)
         {
-            inventory.addItem(new Item(item.item), item.amount);
-            Destroy(other.gameObject);
+            touching_item = item;
+            
         }
         var secondtype = other.GetComponent<AmmoItem>();
         if (secondtype)
@@ -80,6 +82,15 @@ public class Player : MonoBehaviour
 
             }
             
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(touching_item != null)
+            {
+                inventory.addItem(new Item(touching_item.item), touching_item.amount);
+                gameObject.GetComponent<PickupTextManager>().pickupText.text = "";
+                Destroy(touching_item.gameObject);
+            }
         }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -184,6 +195,7 @@ public class Player : MonoBehaviour
                             bool removeItem = hotbar.UseItem(currentSlot);
                             if (removeItem)
                             {
+                                gameObject.GetComponent<PickupTextManager>().pickupText.text = "";
                                 Destroy(EquippedMesh);
                                 EquippedItem = null;
                             }

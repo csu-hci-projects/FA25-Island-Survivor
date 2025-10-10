@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 382}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 140
+  controlID: 73
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 195
+  controlID: 61
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 73
+  controlID: 62
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 74
+  controlID: 63
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -427,7 +427,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/StarterAssets/FirstPersonController/Scripts
+    - Assets/Scriptable Objects/Inventory
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -437,16 +437,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/StarterAssets/FirstPersonController/Scripts
+  - Assets/Scriptable Objects/Inventory
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\FA25-Island-Survivor\CS462 Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 36}
-    m_SelectedIDs: b2b50000
-    m_LastClickedID: 46514
-    m_ExpandedIDs: 00000000b4b1000042b2000048b20000b4b5000000ca9a3b
+    m_SelectedIDs: 5ab20000
+    m_LastClickedID: 45658
+    m_ExpandedIDs: 00000000b4b1000044b2000048b200004eb2000054b2000064b2000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,10 +571,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 04fbffff
+      scrollPos: {x: 0, y: 68}
+      m_SelectedIDs: 489effff
+      m_LastClickedID: -25016
+      m_ExpandedIDs: cef9ffff04fbffff52ac0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1234,9 +1234,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -13.591356, y: 0.2880656, z: -30.201044}
+    m_Target: {x: 524.39594, y: 286.66867, z: -758.3635}
     speed: 2
-    m_Value: {x: -13.591356, y: 0.2880656, z: -30.201044}
+    m_Value: {x: 524.39594, y: 286.66867, z: -758.3635}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1282,13 +1282,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.02614986, y: 0.74091727, z: -0.028923402, w: -0.6705392}
+    m_Target: {x: -0.22147278, y: -0.039757524, z: 0.009028392, w: -0.9743735}
     speed: 2
-    m_Value: {x: -0.026148532, y: 0.74087965, z: -0.028921932, w: -0.67050517}
+    m_Value: {x: -0.22145993, y: -0.039755214, z: 0.009027868, w: -0.97431695}
   m_Size:
-    m_Target: 0.32734457
+    m_Target: 0.28511184
     speed: 2
-    m_Value: 0.32734457
+    m_Value: 0.28511184
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1366,7 +1366,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scriptable Objects/Items
+    - Assets/Scriptable Objects/Items/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1376,16 +1376,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scriptable Objects/Items
+  - Assets/Scriptable Objects/Items/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\FA25-Island-Survivor\CS462 Project
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 8}
-    m_SelectedIDs: 4eb20000
-    m_LastClickedID: 45646
-    m_ExpandedIDs: 00000000b4b1000042b2000000ca9a3b
+    m_SelectedIDs: 60b20000
+    m_LastClickedID: 45664
+    m_ExpandedIDs: 00000000b4b1000044b2000048b2000054b2000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300004aca000076df00004ebb000056ac000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

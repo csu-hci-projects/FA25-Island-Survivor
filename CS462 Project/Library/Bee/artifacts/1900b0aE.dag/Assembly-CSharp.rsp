@@ -447,6 +447,7 @@
 "Assets/Scripts/EnemyActor.cs"
 "Assets/Scripts/EnemyPathfind.cs"
 "Assets/Scripts/GroundItem.cs"
+"Assets/Scripts/PickupTextManager.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/StaticInterface.cs"
 "Assets/Scripts/UserInterface.cs"

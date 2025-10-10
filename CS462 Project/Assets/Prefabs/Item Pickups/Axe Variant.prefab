@@ -53,6 +53,18 @@ PrefabInstance:
       value: Axe Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5939174165805841528, guid: f5ede4f15a030c64d851406b4f2eb4ae, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939174165805841528, guid: f5ede4f15a030c64d851406b4f2eb4ae, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939174165805841528, guid: f5ede4f15a030c64d851406b4f2eb4ae, type: 3}
+      propertyPath: m_Size.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939174165805841528, guid: f5ede4f15a030c64d851406b4f2eb4ae, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}

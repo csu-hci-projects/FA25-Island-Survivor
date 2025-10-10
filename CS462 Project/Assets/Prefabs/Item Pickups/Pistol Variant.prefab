@@ -13,6 +13,18 @@ PrefabInstance:
       value: Pistol Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
+      propertyPath: m_Size.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
+      propertyPath: m_Size.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
