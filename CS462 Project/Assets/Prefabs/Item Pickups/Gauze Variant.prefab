@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3357180625099365353, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
       propertyPath: m_Size.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3357180625099365353, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
       propertyPath: m_Size.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3357180625099365353, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
       propertyPath: m_Size.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3357180625099365353, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
       propertyPath: m_IsTrigger
@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gauze Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4926410965245599774, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75,6 +79,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4926410965245599774, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3816329942140708851}
+    - targetCorrespondingSourceObject: {fileID: 4926410965245599774, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7579070980303673341}
+    - targetCorrespondingSourceObject: {fileID: 4926410965245599774, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7509959959335169627}
   m_SourcePrefab: {fileID: 100100000, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
 --- !u!1 &6454068503608097768 stripped
 GameObject:
@@ -95,3 +105,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d00524b623dc07747a81760f272e77f2, type: 2}
   amount: 1
+--- !u!114 &7579070980303673341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6454068503608097768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Gauze
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6454068503608097768}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7509959959335169627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6454068503608097768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

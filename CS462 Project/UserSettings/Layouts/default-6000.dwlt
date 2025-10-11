@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 382}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 73
+  controlID: 145
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 61
+  controlID: 77
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 62
+  controlID: 78
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 63
+  controlID: 79
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -297,14 +297,14 @@ MonoBehaviour:
     y: 0
     width: 1054
     height: 378
-  m_MinSize: {x: 231, y: 276}
-  m_MaxSize: {x: 10001, y: 10026}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,8 +324,8 @@ MonoBehaviour:
     y: 0
     width: 340
     height: 933
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -427,7 +427,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scriptable Objects/Inventory
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -437,16 +437,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scriptable Objects/Inventory
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\FA25-Island-Survivor\CS462 Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 36}
-    m_SelectedIDs: 5ab20000
-    m_LastClickedID: 45658
-    m_ExpandedIDs: 00000000b4b1000044b2000048b200004eb2000054b2000064b2000000ca9a3b
+    scrollPos: {x: 0, y: 52}
+    m_SelectedIDs: c4b10000
+    m_LastClickedID: 45508
+    m_ExpandedIDs: 00000000c4b1000054b2000058b2000066b2000068b2000070b2000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -475,7 +475,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b4b10000
+    m_ExpandedIDs: 00000000c4b10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -571,10 +571,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 68}
-      m_SelectedIDs: 489effff
-      m_LastClickedID: -25016
-      m_ExpandedIDs: cef9ffff04fbffff52ac0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: d667fdff
+      m_LastClickedID: -170026
+      m_ExpandedIDs: d667fdffaa6afdff7a90fdff2c92fdffce9cfdff8a9dfdff46b2fdffa8e7fdff68eafdffea38fefff24cfeff1e57feff305efeff185ffeff6662feffca66feff0477feffb277feff5678feff04fbffff56ac0000ca1b0100d8c9010028ca0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1234,9 +1234,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 524.39594, y: 286.66867, z: -758.3635}
+    m_Target: {x: 522.928, y: 308.6911, z: -666.2407}
     speed: 2
-    m_Value: {x: 524.39594, y: 286.66867, z: -758.3635}
+    m_Value: {x: 522.928, y: 308.6911, z: -666.2407}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1282,9 +1282,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.22147278, y: -0.039757524, z: 0.009028392, w: -0.9743735}
+    m_Target: {x: -0.008985686, y: -0.060244095, z: 0.0005203286, w: -0.9982218}
     speed: 2
-    m_Value: {x: -0.22145993, y: -0.039755214, z: 0.009027868, w: -0.97431695}
+    m_Value: {x: -0.00898498, y: -0.060239363, z: 0.0005202877, w: -0.9981434}
   m_Size:
     m_Target: 0.28511184
     speed: 2
@@ -1366,7 +1366,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scriptable Objects/Items/Scripts
+    - Assets/Scriptable Objects/Items/Keys/Plane Parts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1376,16 +1376,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scriptable Objects/Items/Scripts
+  - Assets/Scriptable Objects/Items/Keys/Plane Parts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\FA25-Island-Survivor\CS462 Project
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 8}
-    m_SelectedIDs: 60b20000
-    m_LastClickedID: 45664
-    m_ExpandedIDs: 00000000b4b1000044b2000048b2000054b2000000ca9a3b
+    scrollPos: {x: 0, y: 52}
+    m_SelectedIDs: 1ecc0100
+    m_LastClickedID: 117790
+    m_ExpandedIDs: 00000000c4b1000054b2000058b2000066b2000068b2000070b2000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1414,7 +1414,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b4b10000
+    m_ExpandedIDs: 00000000c4b10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1440,9 +1440,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 94020000
+    m_LastClickedInstanceID: 660
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300004aca000076df00004ebb000056ac000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

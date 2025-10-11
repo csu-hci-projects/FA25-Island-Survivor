@@ -19,27 +19,21 @@ public class Player : MonoBehaviour
     public LayerMask doorLayerMask;
     public TextMeshProUGUI ammoGUI;
     public GroundItem touching_item;
+    private bool isPaused = false;
+    public Canvas PauseMenu;
 
     public MouseItem mouseItem = new MouseItem();
     public void OnTriggerEnter(Collider other)
     {
-        var item = other.GetComponent<GroundItem>();
-        if (item)
+        var type = other.GetComponent<AmmoItem>();
+        if (type)
         {
-            touching_item = item;
-            
-        }
-        var secondtype = other.GetComponent<AmmoItem>();
-        if (secondtype)
-        {
-            Debug.Log("component AmmoItem Found");
-            int ID = secondtype.ammo.weapon.ID;
+            int ID = type.ammo.weapon.ID;
             for (int i = 0; i < inventory.Container.Items.Length; i++)
             {
                 if (inventory.Container.Items[i].id == ID)
                 {
-                    Debug.Log("ID found, adding ammo count");
-                    secondtype.ammo.weapon.ammo += secondtype.ammo.ammoCount;
+                    type.ammo.weapon.ammo += type.ammo.ammoCount;
                     Destroy(other.gameObject);
                 }
             }
@@ -47,8 +41,7 @@ public class Player : MonoBehaviour
             {
                 if (hotbar.Container.Items[i].id == ID) 
                 {
-                    Debug.Log("ID found, adding ammo count");
-                    secondtype.ammo.weapon.ammo += secondtype.ammo.ammoCount;
+                    type.ammo.weapon.ammo += type.ammo.ammoCount;
                     Destroy(other.gameObject);
                 }
             }
@@ -62,158 +55,171 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!ShowInventory)
+            isPaused= !isPaused;
+            PauseMenu.gameObject.SetActive(isPaused);
+            if (isPaused)
             {
-                ShowInventory = true;
-                InventoryScreen.SetActive(true);
+                Time.timeScale = 0.0f;
                 UnityEngine.Cursor.visible = true;
                 UnityEngine.Cursor.lockState = CursorLockMode.None;
                 gameObject.GetComponent<FirstPersonController>().enabled = false;
             }
             else
             {
-                ShowInventory = false;
-                InventoryScreen.SetActive(false);
+                Time.timeScale = 1.0f;
                 UnityEngine.Cursor.lockState = CursorLockMode.Locked;
                 UnityEngine.Cursor.visible = false;
                 gameObject.GetComponent<FirstPersonController>().enabled = true;
+                
+            }
+        }
+        if (!isPaused)
+        {
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                if (!ShowInventory)
+                {
+                    ShowInventory = true;
+                    InventoryScreen.SetActive(true);
+                    UnityEngine.Cursor.visible = true;
+                    UnityEngine.Cursor.lockState = CursorLockMode.None;
+                    gameObject.GetComponent<FirstPersonController>().enabled = false;
+                }
+                else
+                {
+                    ShowInventory = false;
+                    InventoryScreen.SetActive(false);
+                    UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+                    UnityEngine.Cursor.visible = false;
+                    gameObject.GetComponent<FirstPersonController>().enabled = true;
+
+                }
 
             }
-            
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if(touching_item != null)
+            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                inventory.addItem(new Item(touching_item.item), touching_item.amount);
-                gameObject.GetComponent<PickupTextManager>().pickupText.text = "";
-                Destroy(touching_item.gameObject);
+                EquipSlot(0);
             }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            EquipSlot(0);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            EquipSlot(1);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            EquipSlot(2);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            EquipSlot(3);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            EquipSlot(4);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            EquipSlot(5);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha7))
-        {
-            EquipSlot(6);
-        }
-        if (Input.GetMouseButton(0))
-        {
-            if (EquippedItem != null)
+            if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                
-                if (EquippedItem.type == itemType.Weapon)
-                    
+                EquipSlot(1);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                EquipSlot(2);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                EquipSlot(3);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha5))
+            {
+                EquipSlot(4);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha6))
+            {
+                EquipSlot(5);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha7))
+            {
+                EquipSlot(6);
+            }
+            if (Input.GetMouseButton(0))
+            {
+                if (EquippedItem != null)
                 {
-                    if(((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Melee)
+
+                    if (EquippedItem.type == itemType.Weapon)
+
                     {
-                        GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
-                        GetComponent<Gun>().SwingWeapon();
-                    }
-                    else if (((WeaponObject)EquippedItem.itemObject).isAutomatic)
-                    {
-                        GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
-                        GetComponent<Gun>().FireWeapon();
-                        //play muzzle flash particle
+                        if (((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Melee)
+                        {
+                            GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                            GetComponent<Gun>().SwingWeapon();
+                        }
+                        else if (((WeaponObject)EquippedItem.itemObject).isAutomatic)
+                        {
+                            GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                            GetComponent<Gun>().FireWeapon();
+                            //play muzzle flash particle
+                        }
                     }
                 }
             }
-        }if (Input.GetMouseButtonDown(0))
-        {
-            if (EquippedItem != null)
+            if (Input.GetMouseButtonDown(0))
             {
-                
-                if (EquippedItem.type == itemType.Equipment)
+                if (EquippedItem != null)
                 {
-                    EquippedItem.UseItem();
-                    GetComponent<SpeedManager>().UseEquipment((EquipmentObject)EquippedItem.itemObject);
-                    bool removeItem = hotbar.UseItem(currentSlot);
-                    if (removeItem)
+
+                    if (EquippedItem.type == itemType.Equipment)
                     {
-                        Destroy(EquippedMesh);
-                        EquippedItem = null;
-                    }
-                    return;
-                }
-                if(EquippedItem.type == itemType.Healing || EquippedItem.type == itemType.Food)
-                {
-                    if (EquippedItem.UseItem())
-                    {
+                        EquippedItem.UseItem();
+                        GetComponent<SpeedManager>().UseEquipment((EquipmentObject)EquippedItem.itemObject);
                         bool removeItem = hotbar.UseItem(currentSlot);
                         if (removeItem)
                         {
                             Destroy(EquippedMesh);
                             EquippedItem = null;
                         }
+                        return;
                     }
-                    return;
-                }
-                //Subtract 1 value from inventory location if not weapon
-                if (EquippedItem.type == itemType.Weapon)
-                {
-                    if (!((WeaponObject)EquippedItem.itemObject).isAutomatic && ((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Ranged)
+                    if (EquippedItem.type == itemType.Healing || EquippedItem.type == itemType.Food)
                     {
-                        GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
-                        GetComponent<Gun>().FireWeapon();
-                        //play muzzle flash particle
-                    }
-                }
-                if(EquippedItem.type == itemType.Key)
-                {
-                    Debug.Log("Using Key");
-                    Collider[] doors = Physics.OverlapBox(transform.position, new Vector3(4,2,4), Quaternion.identity, doorLayerMask);
-                    foreach (Collider door in doors)
-                    {
-                        Debug.Log("Key Interacting With Door");
-                        KeyObject key = (KeyObject)EquippedItem.itemObject;
-                        if (door.GetComponent<Door>().doorID.Contains(key.doorID))
+                        if (EquippedItem.UseItem())
                         {
-                            door.GetComponent<Door>().openDoor(key.doorID);
                             bool removeItem = hotbar.UseItem(currentSlot);
                             if (removeItem)
                             {
-                                gameObject.GetComponent<PickupTextManager>().pickupText.text = "";
                                 Destroy(EquippedMesh);
                                 EquippedItem = null;
                             }
                         }
+                        return;
                     }
-                    return;
+                    //Subtract 1 value from inventory location if not weapon
+                    if (EquippedItem.type == itemType.Weapon)
+                    {
+                        if (!((WeaponObject)EquippedItem.itemObject).isAutomatic && ((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Ranged)
+                        {
+                            GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                            GetComponent<Gun>().FireWeapon();
+                            //play muzzle flash particle
+                        }
+                    }
+                    if (EquippedItem.type == itemType.Key)
+                    {
+                        Collider[] doors = Physics.OverlapBox(transform.position, new Vector3(4, 2, 4), Quaternion.identity, doorLayerMask);
+                        foreach (Collider door in doors)
+                        {
+                            KeyObject key = (KeyObject)EquippedItem.itemObject;
+                            if (door.GetComponent<Door>().doorID.Contains(key))
+                            {
+                                door.GetComponent<Door>().openDoor(key);
+                                this.GetComponent<PickupTextManager>().updateText(door.GetComponent<Door>());
+                                bool removeItem = hotbar.UseItem(currentSlot);//delete this if you want to use a unique key for multiple different doors
+                                if (removeItem)
+                                {
+                                    Destroy(EquippedMesh);
+                                    EquippedItem = null;
+                                }
+                            }
+                        }
+                        return;
+                    }
                 }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            if(EquippedItem != null)
+            if (Input.GetKeyDown(KeyCode.R))
             {
-                if(EquippedItem.type == itemType.Weapon)
+                if (EquippedItem != null)
                 {
-                    WeaponObject weapon = (WeaponObject)EquippedItem.itemObject;
-                    //play Reload animation
-                    weapon.Reload();
+                    if (EquippedItem.type == itemType.Weapon)
+                    {
+                        WeaponObject weapon = (WeaponObject)EquippedItem.itemObject;
+                        //play Reload animation
+                        weapon.Reload();
+                    }
                 }
             }
         }
@@ -246,5 +252,9 @@ public class Player : MonoBehaviour
                 ammoGUI.gameObject.GetComponent<AmmoInterface>().currentWeapon = (WeaponObject)EquippedItem.itemObject;
             }
         }
+    }
+    public void addInventoryItem(GroundItem item)
+    {
+        inventory.addItem(new Item(item.item), item.amount);
     }
 }

@@ -16,6 +16,6 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 3aa86cc0eb1a0d4478d971d9f6c5162a, type: 3}
   playerHoldingObject: {fileID: 928508826786744798, guid: 945127419a4497d439736334839c3109, type: 3}
   type: 0
-  description: 
+  description: Boar Meat
   restoreStaminaValue: 40
   Hunger: {fileID: 11400000, guid: 9341abd6d5c69984485e15ff125bb15e, type: 2}

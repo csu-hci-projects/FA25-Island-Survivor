@@ -52,13 +52,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machete Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5530676279410795239, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 5834995455688978593, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
       propertyPath: m_Size.x
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5834995455688978593, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
       propertyPath: m_Size.z
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5834995455688978593, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
       propertyPath: m_IsTrigger
@@ -71,6 +75,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5530676279410795239, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5985016375057975437}
+    - targetCorrespondingSourceObject: {fileID: 5530676279410795239, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5448085136731153563}
+    - targetCorrespondingSourceObject: {fileID: 5530676279410795239, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8997337830814899745}
   m_SourcePrefab: {fileID: 100100000, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
 --- !u!1 &447224248208492777 stripped
 GameObject:
@@ -91,3 +101,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 80a6d5f3aebf26f43be861f4da95955b, type: 2}
   amount: 1
+--- !u!114 &-5448085136731153563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447224248208492777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Machete
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 447224248208492777}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-8997337830814899745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447224248208492777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

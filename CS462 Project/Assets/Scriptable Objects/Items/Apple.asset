@@ -16,6 +16,6 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 90cfc06f6c5bd9e4099173b0c82e6c8d, type: 3}
   playerHoldingObject: {fileID: 6673179678299758149, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
   type: 0
-  description: 
+  description: Apple
   restoreStaminaValue: 7
   Hunger: {fileID: 11400000, guid: 9341abd6d5c69984485e15ff125bb15e, type: 2}

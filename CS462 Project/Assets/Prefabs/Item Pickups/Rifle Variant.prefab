@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rifle Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2088295903076080098, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 5196108012201686295, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.406089
@@ -67,6 +71,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2088295903076080098, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1361815203548073254}
+    - targetCorrespondingSourceObject: {fileID: 2088295903076080098, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5148170042459995475}
+    - targetCorrespondingSourceObject: {fileID: 2088295903076080098, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2291191799451023148}
   m_SourcePrefab: {fileID: 100100000, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
 --- !u!1 &3128425418420485720 stripped
 GameObject:
@@ -106,5 +116,48 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4, y: 2, z: 4}
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0.00000005960464, y: 0, z: -0.00000008940696}
+--- !u!114 &5148170042459995475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128425418420485720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Hunting Rifle
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3128425418420485720}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2291191799451023148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128425418420485720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

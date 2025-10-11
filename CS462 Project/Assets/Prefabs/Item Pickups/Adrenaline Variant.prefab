@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Adrenaline Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7513684342764503196, guid: 4f6b7f6c69077784eaa1f3e155f58468, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 8630192128846751931, guid: 4f6b7f6c69077784eaa1f3e155f58468, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -66,7 +70,13 @@ PrefabInstance:
       addedObject: {fileID: 5445461346226299287}
     - targetCorrespondingSourceObject: {fileID: 7513684342764503196, guid: 4f6b7f6c69077784eaa1f3e155f58468, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7689198280821043051}
+      addedObject: {fileID: -5791601991332649339}
+    - targetCorrespondingSourceObject: {fileID: 7513684342764503196, guid: 4f6b7f6c69077784eaa1f3e155f58468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2555492494984312943}
+    - targetCorrespondingSourceObject: {fileID: 7513684342764503196, guid: 4f6b7f6c69077784eaa1f3e155f58468, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 443426668528107838}
   m_SourcePrefab: {fileID: 100100000, guid: 4f6b7f6c69077784eaa1f3e155f58468, type: 3}
 --- !u!1 &936679027590242058 stripped
 GameObject:
@@ -87,8 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: e1a957b254e5fe74997c67c7b1e0023c, type: 2}
   amount: 1
---- !u!65 &7689198280821043051
-BoxCollider:
+--- !u!136 &-5791601991332649339
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -105,6 +115,51 @@ BoxCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2, y: 2, z: 2}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2555492494984312943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936679027590242058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Adrenaline
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 936679027590242058}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &443426668528107838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936679027590242058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

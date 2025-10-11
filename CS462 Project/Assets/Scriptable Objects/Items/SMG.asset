@@ -16,10 +16,10 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 128a59c9c1f0f804c9affc5bd790ef91, type: 3}
   playerHoldingObject: {fileID: 7504589835820434344, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
   type: 1
-  description: 
+  description: SMG
   damage: 7
   magSize: 30
-  bulletCount: 19
+  bulletCount: 30
   ammo: 120
   fireCooldown: 0.1
   isAutomatic: 1

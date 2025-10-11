@@ -16,6 +16,6 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 0c001238b6a85cd45a42a6d07c5e4a20, type: 3}
   playerHoldingObject: {fileID: 4926410965245599774, guid: a096e9cf2318315488ba4d6707f5a330, type: 3}
   type: 3
-  description: 
+  description: Gauze
   PlayerHealth: {fileID: 11400000, guid: d82ccc9e8bf363340b7228ee5bce007b, type: 2}
   healAmount: 15

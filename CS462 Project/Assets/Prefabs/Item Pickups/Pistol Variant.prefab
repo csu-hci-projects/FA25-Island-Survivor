@@ -12,17 +12,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1536719038068673371, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
       propertyPath: m_Size.x
-      value: 12
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
       propertyPath: m_Size.y
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
       propertyPath: m_Size.z
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3431645330997590849, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
       propertyPath: m_IsTrigger
@@ -75,6 +79,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1536719038068673371, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1080353578999506971}
+    - targetCorrespondingSourceObject: {fileID: 1536719038068673371, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5026902991730526168}
+    - targetCorrespondingSourceObject: {fileID: 1536719038068673371, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4928949614603614550}
   m_SourcePrefab: {fileID: 100100000, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
 --- !u!1 &901683418792814352 stripped
 GameObject:
@@ -95,3 +105,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 6a63982b4d2306941b088abce1dbb84b, type: 2}
   amount: 1
+--- !u!114 &5026902991730526168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901683418792814352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Pistol
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 901683418792814352}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4928949614603614550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901683418792814352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

@@ -16,7 +16,7 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: f7613f071ec998b408f104cd9d53879b, type: 3}
   playerHoldingObject: {fileID: 1536719038068673371, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
   type: 1
-  description: 
+  description: Baretta Pistol
   damage: 10
   magSize: 8
   bulletCount: 8
@@ -26,4 +26,6 @@ MonoBehaviour:
   range: 2000
   reloadCooldown: 2
   weaponType: 1
-  MeleeBox: {fileID: 0}
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 0

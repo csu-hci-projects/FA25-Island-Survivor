@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1396404556965885992, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
       propertyPath: m_Size.x
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1396404556965885992, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1396404556965885992, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
       propertyPath: m_Size.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1396404556965885992, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
       propertyPath: m_IsTrigger
@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SMG Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7504589835820434344, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75,6 +79,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7504589835820434344, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5154781135403424979}
+    - targetCorrespondingSourceObject: {fileID: 7504589835820434344, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6584215623920138142}
+    - targetCorrespondingSourceObject: {fileID: 7504589835820434344, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2913057295964125430}
   m_SourcePrefab: {fileID: 100100000, guid: b11ff1c702771fa458fafb8c9ef3f569, type: 3}
 --- !u!1 &106491712813405086 stripped
 GameObject:
@@ -95,3 +105,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d6244b5d1d262b0468313f3c8a567b50, type: 2}
   amount: 1
+--- !u!114 &6584215623920138142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106491712813405086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup SMG
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 106491712813405086}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-2913057295964125430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106491712813405086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

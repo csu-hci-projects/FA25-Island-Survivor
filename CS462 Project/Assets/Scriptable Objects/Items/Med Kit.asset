@@ -16,6 +16,6 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 6182dd7b3b3762140bce54f1ad1d8a8c, type: 3}
   playerHoldingObject: {fileID: 2096497661633892206, guid: ba2f93dc7c0313743ba52829b3758af6, type: 3}
   type: 3
-  description: 
+  description: Med Kit
   PlayerHealth: {fileID: 11400000, guid: d82ccc9e8bf363340b7228ee5bce007b, type: 2}
   healAmount: 100

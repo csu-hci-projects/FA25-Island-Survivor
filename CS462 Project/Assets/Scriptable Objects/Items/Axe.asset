@@ -16,7 +16,7 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: d1abb04604d550241af78fab6930451e, type: 3}
   playerHoldingObject: {fileID: 2444185423376991367, guid: f5ede4f15a030c64d851406b4f2eb4ae, type: 3}
   type: 1
-  description: 
+  description: Axe
   damage: 13
   magSize: 0
   bulletCount: 0

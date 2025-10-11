@@ -12,17 +12,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 3401554623350608951, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
       propertyPath: m_Size.x
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3401554623350608951, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
       propertyPath: m_Size.y
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3401554623350608951, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
       propertyPath: m_Size.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3401554623350608951, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
       propertyPath: m_IsTrigger
@@ -75,6 +79,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5827347588534750779}
+    - targetCorrespondingSourceObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5271920238588898318}
+    - targetCorrespondingSourceObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3559937791995983977}
   m_SourcePrefab: {fileID: 100100000, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
 --- !u!1 &2644111021942805492 stripped
 GameObject:
@@ -95,3 +105,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 19285535f64f89442afb8de60f915f72, type: 2}
   amount: 1
+--- !u!114 &5271920238588898318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2644111021942805492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Key 1
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2644111021942805492}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-3559937791995983977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2644111021942805492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

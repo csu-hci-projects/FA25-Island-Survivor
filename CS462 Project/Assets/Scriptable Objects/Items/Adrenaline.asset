@@ -16,6 +16,6 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 611dd8d2a78556048965ad3e44e32088, type: 3}
   playerHoldingObject: {fileID: 7513684342764503196, guid: 4f6b7f6c69077784eaa1f3e155f58468, type: 3}
   type: 2
-  description: 
+  description: Adrenaline
   speedIncrease: 2
   speedTime: 30

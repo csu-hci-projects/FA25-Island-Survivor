@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5388644468663552852, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
       propertyPath: m_Size.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5388644468663552852, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5388644468663552852, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
       propertyPath: m_Size.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5388644468663552852, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
       propertyPath: m_IsTrigger
@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6673179678299758149, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75,6 +79,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6673179678299758149, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3960895546968865004}
+    - targetCorrespondingSourceObject: {fileID: 6673179678299758149, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4098191724596388342}
+    - targetCorrespondingSourceObject: {fileID: 6673179678299758149, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8179165382923265217}
   m_SourcePrefab: {fileID: 100100000, guid: d1598d164d32c99408f3ce785803eeef, type: 3}
 --- !u!1 &412212587369244846 stripped
 GameObject:
@@ -95,3 +105,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 3c179f3c8ad8cb14895bb91159b5406c, type: 2}
   amount: 1
+--- !u!114 &-4098191724596388342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412212587369244846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Apple
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 412212587369244846}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8179165382923265217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412212587369244846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

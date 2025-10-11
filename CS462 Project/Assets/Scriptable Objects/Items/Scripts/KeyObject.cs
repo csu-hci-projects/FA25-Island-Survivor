@@ -14,4 +14,8 @@ public class KeyObject : ItemObject
     {
         return true;
     }
+    public string KeyToString()
+    {
+        return description;
+    }
 }

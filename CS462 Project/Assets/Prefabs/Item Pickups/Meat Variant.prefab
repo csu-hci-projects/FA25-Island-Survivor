@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meat Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 928508826786744798, guid: 945127419a4497d439736334839c3109, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 5455627901593849638, guid: 945127419a4497d439736334839c3109, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.600604
@@ -67,6 +71,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 928508826786744798, guid: 945127419a4497d439736334839c3109, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3868513548663671445}
+    - targetCorrespondingSourceObject: {fileID: 928508826786744798, guid: 945127419a4497d439736334839c3109, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3956434838138200240}
+    - targetCorrespondingSourceObject: {fileID: 928508826786744798, guid: 945127419a4497d439736334839c3109, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7151052210450799029}
   m_SourcePrefab: {fileID: 100100000, guid: 945127419a4497d439736334839c3109, type: 3}
 --- !u!1 &6984955520258642227 stripped
 GameObject:
@@ -106,5 +116,48 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4, y: 4, z: 4}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3956434838138200240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984955520258642227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Pickup Meat
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6984955520258642227}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7151052210450799029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984955520258642227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1

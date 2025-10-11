@@ -16,6 +16,6 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: b814112adbf49564cbd2be5ecadfb087, type: 3}
   playerHoldingObject: {fileID: 4997834249978073194, guid: 362d62b1b5c10a047a4263b2fe9c3157, type: 3}
   type: 3
-  description: 
+  description: Bandage
   PlayerHealth: {fileID: 11400000, guid: d82ccc9e8bf363340b7228ee5bce007b, type: 2}
   healAmount: 5

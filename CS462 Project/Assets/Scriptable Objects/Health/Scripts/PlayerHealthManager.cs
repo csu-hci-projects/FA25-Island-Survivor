@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
+using StarterAssets;
 
 public class PlayerHealthManager : MonoBehaviour
 {
@@ -10,12 +11,16 @@ public class PlayerHealthManager : MonoBehaviour
     public HealthObject Hunger;
     public UnityEngine.UI.Slider HealthSlider;
     public UnityEngine.UI.Slider HungerSlider;
+    public Canvas endScreen;
+    public Canvas UI;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI hungerText;
     public int decrement = -1;
 
     private void Start()
     {
+        Hunger.ResetHP();
+        Health.ResetHP();
         StartCoroutine(HungerCount());
         StartCoroutine(HungerLow());
     }
@@ -63,7 +68,12 @@ public class PlayerHealthManager : MonoBehaviour
                 }
                 else
                 {
-                    // end game;
+                    UI.gameObject.SetActive(false);
+                    endScreen.gameObject.SetActive(true);
+                    Time.timeScale = 0.0f;
+                    UnityEngine.Cursor.visible = true;
+                    UnityEngine.Cursor.lockState = CursorLockMode.None;
+                    gameObject.GetComponent<FirstPersonController>().enabled = false;
                 }
             }
     }

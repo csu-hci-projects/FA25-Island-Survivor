@@ -4,32 +4,38 @@ using UnityEngine.InputSystem.Controls;
 
 public class Door : MonoBehaviour
 {
-    public List<int> doorID = new List<int>();
-    public void openDoor(int ID)
+    public List<KeyObject> doorID = new List<KeyObject>();
+    public string message;
+    public GameWin winScreen;
+    public void openDoor(KeyObject key)
     {
-        doorID.Remove(ID);
+        doorID.Remove(key);
         if (doorID.Count == 0)
         {
-            Destroy(this.gameObject);
-            //add code to check if this object is the plane. If it is, end the game instead.
+            gameObject.SetActive(false);
+            if(key.doorID < 6)
+            {
+                winScreen.gameObject.SetActive(true);
+                winScreen.WinGame();
+            }
         }
     }
 
     public string IDtoString()
     {
-        string finalString = "";
+        string finalString = message + " (Needs ";
         if (doorID.Count == 1) {
-            return "Key " + doorID[0].ToString();
+            return finalString + doorID[0].ToString() + ")";
         }
         for(int i = 0; i < doorID.Count;i++)
         {
             if(i != doorID.Count - 1)
             {
-                finalString += "Key " + doorID[i].ToString() + ", ";
+                finalString += doorID[i].KeyToString() + ", ";
             }
             else
             {
-                finalString += "and Key " + doorID[i].ToString();
+                finalString += "and " + doorID[i].KeyToString() + ")";
             }
         }
         return finalString;
