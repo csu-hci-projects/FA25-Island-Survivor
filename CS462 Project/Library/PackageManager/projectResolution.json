@@ -69,6 +69,16 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.editorcoroutines@1.0.0": {
+      "name": "com.unity.editorcoroutines",
+      "displayName": "Editor Coroutines",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.editorcoroutines@7d48783e7b8c",
+      "fingerprint": "7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca",
+      "editorCompatibility": "2018.1.0a1",
+      "version": "1.0.0",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.ext.nunit@2.0.5": {
       "name": "com.unity.ext.nunit",
       "displayName": "Custom NUnit",
@@ -77,6 +87,15 @@
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
       "source": "registry",
+      "testable": false
+    },
+    "com.unity.feature.development@1.0.2": {
+      "name": "com.unity.feature.development",
+      "displayName": "Engineering",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.feature.development@767aadbc6eb7",
+      "fingerprint": "767aadbc6eb72681a4ca807c8fa248e0230a0cef",
+      "version": "1.0.2",
+      "source": "builtin",
       "testable": false
     },
     "com.unity.ide.rider@3.0.31": {
@@ -149,6 +168,26 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.performance.profile-analyzer@1.2.3": {
+      "name": "com.unity.performance.profile-analyzer",
+      "displayName": "Profile Analyzer",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.performance.profile-analyzer@a68e7bc84997",
+      "fingerprint": "a68e7bc849973d943853204178d08a2bc7656ffe",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "1.2.3",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.postprocessing@3.4.0": {
+      "name": "com.unity.postprocessing",
+      "displayName": "Post Processing",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.postprocessing@026b2a0827a4",
+      "fingerprint": "026b2a0827a438e3079df62a60ca03d54961393d",
+      "editorCompatibility": "2019.4.19f1",
+      "version": "3.4.0",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.render-pipelines.core@17.0.3": {
       "name": "com.unity.render-pipelines.core",
       "displayName": "Core RP Library",
@@ -199,6 +238,16 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.settings-manager@2.0.1": {
+      "name": "com.unity.settings-manager",
+      "displayName": "Settings Manager",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.settings-manager@56a930affa1e",
+      "fingerprint": "56a930affa1e4462d3595b5c19a1c2a4bf2015d2",
+      "editorCompatibility": "2018.4.0a1",
+      "version": "2.0.1",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.shadergraph@17.0.3": {
       "name": "com.unity.shadergraph",
       "displayName": "Shader Graph",
@@ -226,6 +275,16 @@
       "fingerprint": "fb0dc592af8b524f1a06c50d7caf95552f1bcd2f",
       "editorCompatibility": "2020.3.0a1",
       "version": "3.0.3",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.testtools.codecoverage@1.2.6": {
+      "name": "com.unity.testtools.codecoverage",
+      "displayName": "Code Coverage",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.testtools.codecoverage@205a02cbcb39",
+      "fingerprint": "205a02cbcb39584f20b51c49b853047aceb3a3a7",
+      "editorCompatibility": "2019.3.0a1",
+      "version": "1.2.6",
       "source": "registry",
       "testable": false
     },

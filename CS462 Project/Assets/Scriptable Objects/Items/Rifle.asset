@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 24
   uiDisplay: {fileID: 21300000, guid: 7997876bebd6e764d97716fa9054c98a, type: 3}
-  playerHoldingObject: {fileID: 2088295903076080098, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
+  playerHoldingObject: {fileID: 193540257151038129, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
   type: 1
   description: Hunting Rifle
   damage: 40
   magSize: 12
   bulletCount: 12
-  ammo: 48
+  ammo: 80
   fireCooldown: 2
   isAutomatic: 0
   range: 5000

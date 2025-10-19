@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9034081214476282049, guid: d344bea22cd6ee74b99a52090b3a6941, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9034081214476282049, guid: d344bea22cd6ee74b99a52090b3a6941, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3807138089940747903, guid: d344bea22cd6ee74b99a52090b3a6941, type: 3}
       propertyPath: m_Name
       value: Banana Variant
@@ -72,7 +80,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6983874310867089437, guid: d344bea22cd6ee74b99a52090b3a6941, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -85,6 +94,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3807138089940747903, guid: d344bea22cd6ee74b99a52090b3a6941, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7251748106622882366}
+    - targetCorrespondingSourceObject: {fileID: 3807138089940747903, guid: d344bea22cd6ee74b99a52090b3a6941, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1462703549094240174}
   m_SourcePrefab: {fileID: 100100000, guid: d344bea22cd6ee74b99a52090b3a6941, type: 3}
 --- !u!1 &8571605572319412476 stripped
 GameObject:
@@ -148,3 +160,25 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!64 &-1462703549094240174
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571605572319412476}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3216447080179446721, guid: 0a6a2491386b3be489501ed9d6f51b69, type: 3}

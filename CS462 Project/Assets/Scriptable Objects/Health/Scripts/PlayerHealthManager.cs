@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
 using StarterAssets;
+using Unity.VisualScripting;
 
 public class PlayerHealthManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlayerHealthManager : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI hungerText;
     public int decrement = -1;
+    private bool Sprinting = false;
 
     private void Start()
     {
@@ -23,6 +25,20 @@ public class PlayerHealthManager : MonoBehaviour
         Health.ResetHP();
         StartCoroutine(HungerCount());
         StartCoroutine(HungerLow());
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Desert"))
+        {
+            decrement -= 2;
+        }
+    }
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Desert"))
+        {
+            decrement +=2;
+        }
     }
     // Update is called once per frame
     IEnumerator HungerCount()
@@ -76,6 +92,16 @@ public class PlayerHealthManager : MonoBehaviour
                     gameObject.GetComponent<FirstPersonController>().enabled = false;
                 }
             }
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !Sprinting)
+        {
+            Sprinting = true;
+            decrement -= 2;
+        }
+        else
+        {
+            Sprinting = false;
+            decrement += 2;
+        }
     }
     private void OnApplicationQuit()
     {

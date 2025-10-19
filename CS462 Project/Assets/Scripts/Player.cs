@@ -98,127 +98,130 @@ public class Player : MonoBehaviour
                 }
 
             }
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (!ShowInventory)
             {
-                EquipSlot(0);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                EquipSlot(1);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                EquipSlot(2);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                EquipSlot(3);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha5))
-            {
-                EquipSlot(4);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha6))
-            {
-                EquipSlot(5);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha7))
-            {
-                EquipSlot(6);
-            }
-            if (Input.GetMouseButton(0))
-            {
-                if (EquippedItem != null)
+                if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
-
-                    if (EquippedItem.type == itemType.Weapon)
-
+                    EquipSlot(0);
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    EquipSlot(1);
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    EquipSlot(2);
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    EquipSlot(3);
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    EquipSlot(4);
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha6))
+                {
+                    EquipSlot(5);
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha7))
+                {
+                    EquipSlot(6);
+                }
+                if (Input.GetMouseButton(0))
+                {
+                    if (EquippedItem != null)
                     {
-                        if (((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Melee)
+
+                        if (EquippedItem.type == itemType.Weapon)
+
                         {
-                            GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
-                            GetComponent<Gun>().SwingWeapon();
-                        }
-                        else if (((WeaponObject)EquippedItem.itemObject).isAutomatic)
-                        {
-                            GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
-                            GetComponent<Gun>().FireWeapon();
-                            //play muzzle flash particle
+                            if (((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Melee)
+                            {
+                                GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                                GetComponent<Gun>().SwingWeapon();
+                            }
+                            else if (((WeaponObject)EquippedItem.itemObject).isAutomatic)
+                            {
+                                GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                                GetComponent<Gun>().FireWeapon();
+                                //play muzzle flash particle
+                            }
                         }
                     }
                 }
-            }
-            if (Input.GetMouseButtonDown(0))
-            {
-                if (EquippedItem != null)
+                if (Input.GetMouseButtonDown(0))
                 {
+                    if (EquippedItem != null)
+                    {
 
-                    if (EquippedItem.type == itemType.Equipment)
-                    {
-                        EquippedItem.UseItem();
-                        GetComponent<SpeedManager>().UseEquipment((EquipmentObject)EquippedItem.itemObject);
-                        bool removeItem = hotbar.UseItem(currentSlot);
-                        if (removeItem)
+                        if (EquippedItem.type == itemType.Equipment)
                         {
-                            Destroy(EquippedMesh);
-                            EquippedItem = null;
-                        }
-                        return;
-                    }
-                    if (EquippedItem.type == itemType.Healing || EquippedItem.type == itemType.Food)
-                    {
-                        if (EquippedItem.UseItem())
-                        {
+                            EquippedItem.UseItem();
+                            GetComponent<SpeedManager>().UseEquipment((EquipmentObject)EquippedItem.itemObject);
                             bool removeItem = hotbar.UseItem(currentSlot);
                             if (removeItem)
                             {
                                 Destroy(EquippedMesh);
                                 EquippedItem = null;
                             }
+                            return;
                         }
-                        return;
-                    }
-                    //Subtract 1 value from inventory location if not weapon
-                    if (EquippedItem.type == itemType.Weapon)
-                    {
-                        if (!((WeaponObject)EquippedItem.itemObject).isAutomatic && ((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Ranged)
+                        if (EquippedItem.type == itemType.Healing || EquippedItem.type == itemType.Food)
                         {
-                            GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
-                            GetComponent<Gun>().FireWeapon();
-                            //play muzzle flash particle
-                        }
-                    }
-                    if (EquippedItem.type == itemType.Key)
-                    {
-                        Collider[] doors = Physics.OverlapBox(transform.position, new Vector3(4, 2, 4), Quaternion.identity, doorLayerMask);
-                        foreach (Collider door in doors)
-                        {
-                            KeyObject key = (KeyObject)EquippedItem.itemObject;
-                            if (door.GetComponent<Door>().doorID.Contains(key))
+                            if (EquippedItem.UseItem())
                             {
-                                door.GetComponent<Door>().openDoor(key);
-                                this.GetComponent<PickupTextManager>().updateText(door.GetComponent<Door>());
-                                bool removeItem = hotbar.UseItem(currentSlot);//delete this if you want to use a unique key for multiple different doors
+                                bool removeItem = hotbar.UseItem(currentSlot);
                                 if (removeItem)
                                 {
                                     Destroy(EquippedMesh);
                                     EquippedItem = null;
                                 }
                             }
+                            return;
                         }
-                        return;
+                        //Subtract 1 value from inventory location if not weapon
+                        if (EquippedItem.type == itemType.Weapon)
+                        {
+                            if (!((WeaponObject)EquippedItem.itemObject).isAutomatic && ((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Ranged)
+                            {
+                                GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                                GetComponent<Gun>().FireWeapon();
+                                //play muzzle flash particle
+                            }
+                        }
+                        if (EquippedItem.type == itemType.Key)
+                        {
+                            Collider[] doors = Physics.OverlapBox(transform.position, new Vector3(4, 2, 4), Quaternion.identity, doorLayerMask);
+                            foreach (Collider door in doors)
+                            {
+                                KeyObject key = (KeyObject)EquippedItem.itemObject;
+                                if (door.GetComponent<Door>().doorID.Contains(key))
+                                {
+                                    door.GetComponent<Door>().openDoor(key);
+                                    this.GetComponent<PickupTextManager>().updateText(door.GetComponent<Door>());
+                                    bool removeItem = hotbar.UseItem(currentSlot);//delete this if you want to use a unique key for multiple different doors
+                                    if (removeItem)
+                                    {
+                                        Destroy(EquippedMesh);
+                                        EquippedItem = null;
+                                    }
+                                }
+                            }
+                            return;
+                        }
                     }
                 }
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                if (EquippedItem != null)
+                if (Input.GetKeyDown(KeyCode.R))
                 {
-                    if (EquippedItem.type == itemType.Weapon)
+                    if (EquippedItem != null)
                     {
-                        WeaponObject weapon = (WeaponObject)EquippedItem.itemObject;
-                        //play Reload animation
-                        weapon.Reload();
+                        if (EquippedItem.type == itemType.Weapon)
+                        {
+                            WeaponObject weapon = (WeaponObject)EquippedItem.itemObject;
+                            //play Reload animation
+                            weapon.Reload();
+                        }
                     }
                 }
             }
@@ -244,7 +247,7 @@ public class Player : MonoBehaviour
             EquippedMesh.transform.SetParent(cam.transform);
          
             EquippedMesh.transform.localPosition = new Vector3(1.2f, -0.5f, 0.75f);
-            EquippedMesh.transform.localRotation = Quaternion.identity;
+            EquippedMesh.transform.localRotation = Quaternion.Euler(0,180,0); 
             currentSlot = slot;
             if (EquippedItem.type == itemType.Weapon)
             {
