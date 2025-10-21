@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d8d709232bcf04a8ca98d00769a340, type: 3}
   m_Name: SnakeProjectile
   m_EditorClassIdentifier: 
-  damage: 7
+  damage: 2
   speed: 1
+  time: 5

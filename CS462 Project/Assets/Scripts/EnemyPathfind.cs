@@ -27,7 +27,6 @@ public class EnemyPathfind : MonoBehaviour
         {
             if(projectile == null && currentCooldown <=0f)
             {
-                Debug.Log("Dealing " + GetComponent<EnemyActor>().enemyType.damage + " Damage to: " + other.GetComponent<PlayerHealthManager>() + " Object");
                 other.GetComponent<PlayerHealthManager>().dealDamage(-GetComponent<EnemyActor>().enemyType.damage);
                 currentCooldown = GetComponent<EnemyActor>().enemyType.attackSpeed;
             }
@@ -114,6 +113,7 @@ public class EnemyPathfind : MonoBehaviour
             //Attack Code Here
             if (projectile != null)
             {
+                Debug.Log("Launching Projectile");
                 Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
                 rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
                 //rb.AddForce(transform.up * 8f, ForceMode.Impulse);

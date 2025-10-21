@@ -7,7 +7,11 @@ public class Projectile : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerHealthManager>().dealDamage(-projectile.damage);
+            other.gameObject.GetComponent<SpeedManager>().ApplyPoison(projectile.damage, projectile.time);
+        }
+        if(!other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
         }
     }
 }

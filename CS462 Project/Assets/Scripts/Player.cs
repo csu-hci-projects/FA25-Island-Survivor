@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     public LayerMask doorLayerMask;
     public TextMeshProUGUI ammoGUI;
     public GroundItem touching_item;
-    private bool isPaused = false;
+    public bool isPaused = false;
     public Canvas PauseMenu;
 
     public MouseItem mouseItem = new MouseItem();

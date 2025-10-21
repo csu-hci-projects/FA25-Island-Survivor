@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 135
+  controlID: 73
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 61
+  controlID: 193
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -324,8 +324,8 @@ MonoBehaviour:
     y: 0
     width: 340
     height: 933
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -374,7 +374,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 256
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -427,7 +427,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Blender/Models
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -437,16 +437,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Blender/Models
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\FA25-Island-Survivor\CS462 Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 4cbb0000
-    m_LastClickedID: 47948
-    m_ExpandedIDs: 0000000026ba0000aeba0000caba0000ccba00004ebb000000ca9a3b
+    scrollPos: {x: 0, y: 148}
+    m_SelectedIDs: 6aba0000
+    m_LastClickedID: 47722
+    m_ExpandedIDs: 00000000d2b9000058ba000064ba000068ba00003ebb000042bb000044bb000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -475,7 +475,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000026ba0000
+    m_ExpandedIDs: 00000000d2b90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 6cc90000acc900000000000072c20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -571,10 +571,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8abf0000
+      scrollPos: {x: 0, y: 196}
+      m_SelectedIDs: 24bc0000
       m_LastClickedID: 0
-      m_ExpandedIDs: ccfafffffcb10000
+      m_ExpandedIDs: d8faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1234,9 +1234,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -7.0180283, y: 2.7661304, z: -43.64141}
+    m_Target: {x: 5.068654, y: -4.386758, z: -46.317566}
     speed: 2
-    m_Value: {x: -7.0180283, y: 2.7661304, z: -43.64141}
+    m_Value: {x: 5.068654, y: -4.386758, z: -46.317566}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1282,13 +1282,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.17643657, y: 0.5907721, z: -0.1342051, w: 0.77599627}
+    m_Target: {x: -0.03334136, y: -0.85684675, z: 0.05517179, w: -0.51186645}
     speed: 2
-    m_Value: {x: 0.17757146, y: 0.5904748, z: -0.13506968, w: 0.7756057}
+    m_Value: {x: -0.03333554, y: -0.85669726, z: 0.055162165, w: -0.51177716}
   m_Size:
-    m_Target: 21.626911
+    m_Target: 21.408823
     speed: 2
-    m_Value: 21.626911
+    m_Value: 21.408823
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1366,7 +1366,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Blender/Models
+    - Assets/Prefabs/Ammo
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1376,16 +1376,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Blender/Models
+  - Assets/Prefabs/Ammo
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\FA25-Island-Survivor\CS462 Project
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 8}
-    m_SelectedIDs: 4cbb0000
-    m_LastClickedID: 47948
-    m_ExpandedIDs: 0000000026ba00004ebb000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: e8bb0000
+    m_LastClickedID: 48104
+    m_ExpandedIDs: 00000000d2b9000058ba000064ba000068ba00006aba00003ebb000040bb000042bb000044bb000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1414,7 +1414,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000026ba0000
+    m_ExpandedIDs: 00000000d2b90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300004aca000076df00004ebb000056ac000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

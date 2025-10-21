@@ -35,5 +35,6 @@ public class PauseMenu : MonoBehaviour
         UnityEngine.Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().enabled = true;
+        GameObject.FindWithTag("Player").GetComponent<Player>().isPaused = true;
     }
 }
