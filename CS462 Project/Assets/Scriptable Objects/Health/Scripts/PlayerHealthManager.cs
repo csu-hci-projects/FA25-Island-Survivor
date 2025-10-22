@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using StarterAssets;
 using Unity.VisualScripting;
+using System;
 
 public class PlayerHealthManager : MonoBehaviour
 {
@@ -17,7 +18,8 @@ public class PlayerHealthManager : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI hungerText;
     public int decrement = -1;
-    private bool Sprinting = false;
+    private int Sprinting = 0;
+    private int inDesert = 0;
 
     private void Start()
     {
@@ -30,24 +32,25 @@ public class PlayerHealthManager : MonoBehaviour
     {
         if (other.CompareTag("Desert"))
         {
-            decrement -= 2;
+            inDesert = 1;
         }
     }
     public void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Desert"))
         {
-            decrement +=2;
+            inDesert = 0;
         }
     }
     // Update is called once per frame
     IEnumerator HungerCount()
     {
+        
         while (true)
         {
-            if(Hunger.GetHealth() > 0)
+            if (Hunger.GetHealth() > 0)
             {
-                Hunger.SetHealth(decrement);
+                Hunger.SetHealth(decrement - (Sprinting + inDesert) * 2);
                 HungerSlider.value = Hunger.GetHealth();
                 hungerText.text = "Hunger: " + Hunger.GetHealth();
             }
@@ -92,16 +95,7 @@ public class PlayerHealthManager : MonoBehaviour
                     gameObject.GetComponent<FirstPersonController>().enabled = false;
                 }
             }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !Sprinting)
-        {
-            Sprinting = true;
-            decrement -= 2;
-        }
-        else
-        {
-            Sprinting = false;
-            decrement += 2;
-        }
+        Sprinting = Input.GetKey(KeyCode.LeftShift) ? 1 : 0;
     }
     private void OnApplicationQuit()
     {

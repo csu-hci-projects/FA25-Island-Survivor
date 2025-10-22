@@ -25,7 +25,7 @@ public class Door : MonoBehaviour
     {
         string finalString = message + " (Needs ";
         if (doorID.Count == 1) {
-            return finalString + doorID[0].ToString() + ")";
+            return finalString + doorID[0].KeyToString() + ")";
         }
         for(int i = 0; i < doorID.Count;i++)
         {

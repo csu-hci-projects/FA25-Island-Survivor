@@ -8,22 +8,29 @@ using UnityEngine;
 public class InventoryObject : ScriptableObject
 {
     public Inventory Container;
-    public void addItem(Item _item, int amount)
+    public bool addItem(Item _item, int amount)
     {
         
         bool hasItem = false;
         for (int i = 0; i < Container.Items.Length; i++) {
-            if (Container.Items[i].Item.ID == _item.ID)
+            if (Container.Items[i].Item != null)
             {
-                Container.Items[i].addAmount(amount);
-                hasItem = true;
-                break;
+                if (Container.Items[i].Item.ID == _item.ID)
+                {
+                    Container.Items[i].addAmount(amount);
+                    hasItem = true;
+                    return true;
+                }
             }
         }
         if (!hasItem)
         {
-            SetEmptySlot(_item, amount);
+            if(SetEmptySlot(_item, amount) != null)
+            {
+                return true;
+            }
         }
+        return false;
     }
     public bool UseItem(int index)
     {

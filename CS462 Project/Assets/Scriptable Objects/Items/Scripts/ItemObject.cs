@@ -51,6 +51,10 @@ public class Item
     }
     public bool UseItem()
     {
-        return itemObject.Use();
+        if (itemObject != null)
+        {
+            return itemObject.Use();
+        }
+        return false;
     }
 }

@@ -84,6 +84,13 @@ public abstract class UserInterface : MonoBehaviour
     }
     public void OnDragEnd(GameObject obj)
     {
+        if(GameObject.FindWithTag("Player").GetComponent<Player>().EquippedItem != null)
+        {
+            if (itemsDisplayed[obj].Item.ID == GameObject.FindWithTag("Player").GetComponent<Player>().EquippedItem.ID)
+            {
+                GameObject.FindWithTag("Player").GetComponent<Player>().EquipSlot(-1);
+            }
+        }
         if (player.mouseItem.hoverObj)
         {
             inventory.MoveItem(itemsDisplayed[obj], player.mouseItem.hoverItem.parent.itemsDisplayed[player.mouseItem.hoverObj]);

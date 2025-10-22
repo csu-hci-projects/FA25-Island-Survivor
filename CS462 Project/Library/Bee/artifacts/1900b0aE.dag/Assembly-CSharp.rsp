@@ -453,6 +453,7 @@
 "Assets/Scriptable Objects/Items/Scripts/SpeedManager.cs"
 "Assets/Scriptable Objects/Items/Scripts/WeaponObject.cs"
 "Assets/Scripts/AmmoItem.cs"
+"Assets/Scripts/CameraZoom.cs"
 "Assets/Scripts/DisplayInventory.cs"
 "Assets/Scripts/DynamicInterface.cs"
 "Assets/Scripts/EndGameMenu.cs"

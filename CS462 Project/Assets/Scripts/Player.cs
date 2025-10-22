@@ -9,7 +9,7 @@ using static UnityEditor.Progress;
 public class Player : MonoBehaviour
 {
     private bool ShowInventory = false;
-    private Item EquippedItem;
+    public Item EquippedItem;
     private GameObject EquippedMesh;
     public GameObject InventoryScreen;
     public InventoryObject inventory;
@@ -152,7 +152,7 @@ public class Player : MonoBehaviour
                 }
                 if (Input.GetMouseButtonDown(0))
                 {
-                    if (EquippedItem != null)
+                    if (EquippedItem != null || EquippedItem.ID != -1)
                     {
 
                         if (EquippedItem.type == itemType.Equipment)
@@ -167,7 +167,22 @@ public class Player : MonoBehaviour
                             }
                             return;
                         }
-                        if (EquippedItem.type == itemType.Healing || EquippedItem.type == itemType.Food)
+                        if(EquippedItem.type == itemType.Healing)
+                        {
+                            if (gameObject.GetComponent<PlayerHealthManager>().Health.currentHealth <100)
+                            {
+                                gameObject.GetComponent<PlayerHealthManager>().dealDamage(((HealingObject)EquippedItem.itemObject).healAmount);
+                                bool removeItem = hotbar.UseItem(currentSlot);
+                                if (removeItem)
+                                {
+                                    Destroy(EquippedMesh);
+                                    EquippedItem = null;
+                                }
+                            }
+                            return;
+
+                        }
+                            if (EquippedItem.type == itemType.Food)
                         {
                             if (EquippedItem.UseItem())
                             {
@@ -229,6 +244,14 @@ public class Player : MonoBehaviour
     }
     public void EquipSlot(int slot)
     {
+        if(slot == -1)
+        {
+            Destroy(EquippedMesh);
+            ammoGUI.gameObject.SetActive(false);
+            EquippedItem = null;
+            currentSlot = -1;
+            return;
+        }
         if (hotbar.Container.Items[slot].Item.playerHoldingObject != null)
         {
             if (EquippedItem != null)
@@ -258,6 +281,18 @@ public class Player : MonoBehaviour
     }
     public void addInventoryItem(GroundItem item)
     {
-        inventory.addItem(new Item(item.item), item.amount);
+        int ID = item.item.ID;
+        for (int i = 0; i < inventory.Container.Items.Length; i++)
+        {
+            if (inventory.Container.Items[i].id == ID)
+            {
+                inventory.addItem(new Item(item.item), item.amount);
+                return;
+            }
+        }
+        if(!hotbar.addItem(new Item(item.item), item.amount))
+        {
+            inventory.addItem(new Item(item.item), item.amount);
+        }
     }
 }
