@@ -568,6 +568,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5791601991332649339, guid: 00bb690061e3dda46af76620789ce6a0, type: 3}
+      propertyPath: m_Height
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 936679027590242058, guid: 00bb690061e3dda46af76620789ce6a0, type: 3}
       propertyPath: m_Name
       value: Adrenaline Variant
