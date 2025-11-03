@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 101
   uiDisplay: {fileID: 21300000, guid: 8937aa635b7f102478e3b36c8df3b5bd, type: 3}
-  playerHoldingObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+  playerHoldingObject: {fileID: 5535870184646867207, guid: d64abc6d0499be04bba06f9226f7a7d1, type: 3}
   type: 4
   description: Wheel
   doorID: 1

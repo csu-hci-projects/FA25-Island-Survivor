@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 103
   uiDisplay: {fileID: 21300000, guid: 18d5bfd7f4c299b4e9d7bb539a4ca713, type: 3}
-  playerHoldingObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+  playerHoldingObject: {fileID: 2505514199704025854, guid: 6de7c1abfe444ba4faff87d2220bf8a6, type: 3}
   type: 4
   description: Propeller
   doorID: 3

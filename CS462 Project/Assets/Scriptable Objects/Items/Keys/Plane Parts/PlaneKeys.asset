@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 105
   uiDisplay: {fileID: 21300000, guid: 1be5294e50f3fe743bd966009fd9e38f, type: 3}
-  playerHoldingObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+  playerHoldingObject: {fileID: 3587039190331657756, guid: 32fa266cd91b1b744abf489be0f9dfcf, type: 3}
   type: 4
   description: Plane Keys
   doorID: 5

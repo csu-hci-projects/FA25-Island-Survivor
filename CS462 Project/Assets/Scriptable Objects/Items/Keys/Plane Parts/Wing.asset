@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 102
   uiDisplay: {fileID: 21300000, guid: 7627a372087cf8945be7b6069e541634, type: 3}
-  playerHoldingObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+  playerHoldingObject: {fileID: 8735532923397034172, guid: 9d334f56eb193ad4c95e9d2accb77ed5, type: 3}
   type: 4
   description: Wing
   doorID: 2

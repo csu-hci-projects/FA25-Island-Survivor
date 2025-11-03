@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 104
   uiDisplay: {fileID: 21300000, guid: 330333730a36d3f41bb47e26bd542208, type: 3}
-  playerHoldingObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
+  playerHoldingObject: {fileID: 6010812981217668709, guid: 0f95470859fad184a85d331074b956a8, type: 3}
   type: 4
   description: Engine
   doorID: 4

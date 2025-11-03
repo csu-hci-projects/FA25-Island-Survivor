@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     public GameWin winScreen;
     public void openDoor(KeyObject key)
     {
+        GetComponent<Plane>().repairPart(doorID.IndexOf(key));
         doorID.Remove(key);
         if (doorID.Count == 0)
         {

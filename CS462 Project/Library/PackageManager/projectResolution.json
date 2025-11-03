@@ -1,51 +1,51 @@
 {
   "context": {
     "projectPath": "D:/Github/FA25-Island-Survivor/CS462 Project/Packages",
-    "unityVersion": "6000.0.35f1"
+    "unityVersion": "6000.2.6f2"
   },
   "inputs": [
     "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Packages\\manifest.json",
     "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Packages\\packages-lock.json",
-    "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
+    "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
     "com.unity.2d.sprite@1.0.0": {
       "name": "com.unity.2d.sprite",
       "displayName": "2D Sprite",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.2d.sprite@6e37a90069af",
-      "fingerprint": "6e37a90069af6bceba270d5e592cd6f3521c7a27",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.2d.sprite@331abd9a1e2f",
+      "fingerprint": "331abd9a1e2ff424a1ef2626e16936071ab7ce3d",
       "editorCompatibility": "2019.2.0a1",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
     },
-    "com.unity.ai.navigation@2.0.5": {
+    "com.unity.ai.navigation@2.0.9": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ai.navigation@9f76b145f0a8",
-      "fingerprint": "9f76b145f0a8dd734ff2a4877f7f7edb83b7f62c",
-      "editorCompatibility": "2023.2.0a18",
-      "version": "2.0.5",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ai.navigation@5218e4bf7edc",
+      "fingerprint": "5218e4bf7edc04fcad4ed3836c1c41aef334b996",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "2.0.9",
       "source": "registry",
       "testable": false
     },
-    "com.unity.burst@1.8.18": {
+    "com.unity.burst@1.8.24": {
       "name": "com.unity.burst",
       "displayName": "Burst",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.burst@616862665d8c",
-      "fingerprint": "616862665d8c8ffe643d505aebb5de2ee73b0ab0",
-      "editorCompatibility": "2020.3.0a1",
-      "version": "1.8.18",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.burst@f7a407abf4d5",
+      "fingerprint": "f7a407abf4d5abf19ce630824dcde261e02ed97e",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.8.24",
       "source": "registry",
       "testable": false
     },
-    "com.unity.cinemachine@2.10.3": {
+    "com.unity.cinemachine@2.10.4": {
       "name": "com.unity.cinemachine",
       "displayName": "Cinemachine",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.cinemachine@dcc61ebd6655",
-      "fingerprint": "dcc61ebd6655e32f2b7f8ebca32ca02be455e2d9",
-      "editorCompatibility": "2019.4.0a1",
-      "version": "2.10.3",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.cinemachine@915237edaa40",
+      "fingerprint": "915237edaa40461a941e260ca123faf48eaf6a40",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "2.10.4",
       "source": "registry",
       "testable": false
     },
@@ -59,13 +59,13 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.collections@2.5.1": {
+    "com.unity.collections@2.5.7": {
       "name": "com.unity.collections",
       "displayName": "Collections",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.collections@56bff8827a7e",
-      "fingerprint": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0",
-      "editorCompatibility": "2022.3.11f1",
-      "version": "2.5.1",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.collections@d49facba0036",
+      "fingerprint": "d49facba0036aa0e1508296262f9d93b44d1ab3b",
+      "editorCompatibility": "2022.3.20f1",
+      "version": "2.5.7",
       "source": "registry",
       "testable": false
     },
@@ -82,11 +82,11 @@
     "com.unity.ext.nunit@2.0.5": {
       "name": "com.unity.ext.nunit",
       "displayName": "Custom NUnit",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd",
-      "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ext.nunit@031a54704bff",
+      "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
-      "source": "registry",
+      "source": "builtin",
       "testable": false
     },
     "com.unity.feature.development@1.0.2": {
@@ -98,33 +98,33 @@
       "source": "builtin",
       "testable": false
     },
-    "com.unity.ide.rider@3.0.31": {
+    "com.unity.ide.rider@3.0.38": {
       "name": "com.unity.ide.rider",
       "displayName": "JetBrains Rider Editor",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ide.rider@7921be93db40",
-      "fingerprint": "7921be93db40ec070fcb01ed82d1c3df1bbdddcd",
-      "editorCompatibility": "2019.2.6f1",
-      "version": "3.0.31",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ide.rider@1f60b3138684",
+      "fingerprint": "1f60b3138684c97af67aa8d911b1632ba916d29d",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "3.0.38",
       "source": "registry",
       "testable": false
     },
-    "com.unity.ide.visualstudio@2.0.22": {
+    "com.unity.ide.visualstudio@2.0.23": {
       "name": "com.unity.ide.visualstudio",
       "displayName": "Visual Studio Editor",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ide.visualstudio@8140e851d83e",
-      "fingerprint": "8140e851d83e922ca2021b04a89519de94ebe38c",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ide.visualstudio@198cdf337d13",
+      "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
       "editorCompatibility": "2019.4.25f1",
-      "version": "2.0.22",
+      "version": "2.0.23",
       "source": "registry",
       "testable": false
     },
-    "com.unity.inputsystem@1.11.2": {
+    "com.unity.inputsystem@1.14.2": {
       "name": "com.unity.inputsystem",
       "displayName": "Input System",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.inputsystem@3c4a97c3950f",
-      "fingerprint": "3c4a97c3950fef77960981e0fe90613de6e512ee",
-      "editorCompatibility": "2019.4.0a1",
-      "version": "1.11.2",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.inputsystem@be6c4fd0abf5",
+      "fingerprint": "be6c4fd0abf5b9b45f956b97294032a67f3c2f4d",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.14.2",
       "source": "registry",
       "testable": false
     },
@@ -141,20 +141,20 @@
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
       "displayName": "Multiplayer Center",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.multiplayer.center@f502d8ac613f",
-      "fingerprint": "f502d8ac613fa076192423e73892fbd89eb4049b",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.multiplayer.center@f3fb577b3546",
+      "fingerprint": "f3fb577b3546594b97b8cc34307cd621f60f1c73",
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
     },
-    "com.unity.nuget.mono-cecil@1.11.4": {
+    "com.unity.nuget.mono-cecil@1.11.5": {
       "name": "com.unity.nuget.mono-cecil",
       "displayName": "Mono Cecil",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f",
-      "fingerprint": "d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62",
-      "editorCompatibility": "2018.4.0a1",
-      "version": "1.11.4",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d78732e851eb",
+      "fingerprint": "d78732e851eb42273c8e4d97993d3a94b207e570",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "1.11.5",
       "source": "registry",
       "testable": false
     },
@@ -178,41 +178,41 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.postprocessing@3.4.0": {
+    "com.unity.postprocessing@3.5.0": {
       "name": "com.unity.postprocessing",
       "displayName": "Post Processing",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.postprocessing@026b2a0827a4",
-      "fingerprint": "026b2a0827a438e3079df62a60ca03d54961393d",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.postprocessing@94edadb6c5ab",
+      "fingerprint": "94edadb6c5ab827a382b0d6f5f550866ffcfc586",
       "editorCompatibility": "2019.4.19f1",
-      "version": "3.4.0",
+      "version": "3.5.0",
       "source": "registry",
       "testable": false
     },
-    "com.unity.render-pipelines.core@17.0.3": {
+    "com.unity.render-pipelines.core@17.2.0": {
       "name": "com.unity.render-pipelines.core",
-      "displayName": "Core RP Library",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.render-pipelines.core@a50b3570474f",
-      "fingerprint": "a50b3570474f5e869509952e406c548d41f2490e",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
+      "displayName": "Scriptable Render Pipeline Core",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.render-pipelines.core@317e801bb3aa",
+      "fingerprint": "317e801bb3aaa64596e4ec903cb788a0dfb07788",
+      "editorCompatibility": "6000.2.0a1",
+      "version": "17.2.0",
       "source": "builtin",
       "testable": false
     },
-    "com.unity.render-pipelines.universal@17.0.3": {
+    "com.unity.render-pipelines.universal@17.2.0": {
       "name": "com.unity.render-pipelines.universal",
-      "displayName": "Universal RP",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.render-pipelines.universal@39c80789bb81",
-      "fingerprint": "39c80789bb8143337aed936c9422ddd10fa5cd42",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
+      "displayName": "Universal Render Pipeline",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.render-pipelines.universal@1e1527b3a17b",
+      "fingerprint": "1e1527b3a17b44f31a422fe35668ce3076b746a1",
+      "editorCompatibility": "6000.2.0a1",
+      "version": "17.2.0",
       "source": "builtin",
       "testable": false
     },
     "com.unity.render-pipelines.universal-config@17.0.3": {
       "name": "com.unity.render-pipelines.universal-config",
-      "displayName": "Universal RP Config",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.render-pipelines.universal-config@fa63c96d3e1a",
-      "fingerprint": "fa63c96d3e1af317d84d171cd6c0e0658ab159df",
+      "displayName": "Universal Render Pipeline Config",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.render-pipelines.universal-config@8dc1aab4af1d",
+      "fingerprint": "8dc1aab4af1d718781689a36ed5231a35ad1a524",
       "editorCompatibility": "6000.0.0a1",
       "version": "17.0.3",
       "source": "builtin",
@@ -221,60 +221,50 @@
     "com.unity.rendering.light-transport@1.0.1": {
       "name": "com.unity.rendering.light-transport",
       "displayName": "Unity Light Transport Library",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.rendering.light-transport@307bc27a498f",
-      "fingerprint": "307bc27a498fc9cd409bbd426c85d8dc7f140bc1",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.rendering.light-transport@2c9279f90d7c",
+      "fingerprint": "2c9279f90d7c8dfb6e76e3f90b6b3be1cafabfbc",
       "editorCompatibility": "2023.3.0b1",
       "version": "1.0.1",
       "source": "builtin",
       "testable": false
     },
-    "com.unity.searcher@4.9.2": {
-      "name": "com.unity.searcher",
-      "displayName": "Searcher",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.searcher@90d011a70418",
-      "fingerprint": "90d011a70418fd5b0f4b8e86df39444d2af228dd",
-      "editorCompatibility": "2019.1.0a1",
-      "version": "4.9.2",
-      "source": "registry",
-      "testable": false
-    },
-    "com.unity.settings-manager@2.0.1": {
+    "com.unity.settings-manager@2.1.0": {
       "name": "com.unity.settings-manager",
       "displayName": "Settings Manager",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.settings-manager@56a930affa1e",
-      "fingerprint": "56a930affa1e4462d3595b5c19a1c2a4bf2015d2",
-      "editorCompatibility": "2018.4.0a1",
-      "version": "2.0.1",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.settings-manager@41738c275190",
+      "fingerprint": "41738c27519039c335849eb78949382f4d7a3544",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "2.1.0",
       "source": "registry",
       "testable": false
     },
-    "com.unity.shadergraph@17.0.3": {
+    "com.unity.shadergraph@17.2.0": {
       "name": "com.unity.shadergraph",
       "displayName": "Shader Graph",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.shadergraph@911117698220",
-      "fingerprint": "9111176982208cf007caa931c3cf2716ceec4632",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.shadergraph@5516e0d97518",
+      "fingerprint": "5516e0d9751810ec70d19bca7a5251cbecd2b5ca",
+      "editorCompatibility": "6000.2.0a1",
+      "version": "17.2.0",
       "source": "builtin",
       "testable": false
     },
-    "com.unity.test-framework@1.4.5": {
+    "com.unity.test-framework@1.6.0": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.test-framework@0a21eb82d95c",
-      "fingerprint": "0a21eb82d95cd331643a1e0ce4e8e9a5f18954c8",
-      "editorCompatibility": "2019.4.0a10",
-      "version": "1.4.5",
-      "source": "registry",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.test-framework@40b8da2bd3e9",
+      "fingerprint": "40b8da2bd3e983adc3b78d9740a2a48ddb8f179f",
+      "editorCompatibility": "6000.0.44f1",
+      "version": "1.6.0",
+      "source": "builtin",
       "testable": false
     },
-    "com.unity.test-framework.performance@3.0.3": {
+    "com.unity.test-framework.performance@3.1.0": {
       "name": "com.unity.test-framework.performance",
       "displayName": "Performance testing API",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.test-framework.performance@fb0dc592af8b",
-      "fingerprint": "fb0dc592af8b524f1a06c50d7caf95552f1bcd2f",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.test-framework.performance@92d1d09a72ed",
+      "fingerprint": "92d1d09a72ed696fa23fd76c675b29d211664b50",
       "editorCompatibility": "2020.3.0a1",
-      "version": "3.0.3",
+      "version": "3.1.0",
       "source": "registry",
       "testable": false
     },
@@ -288,40 +278,40 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.timeline@1.8.7": {
+    "com.unity.timeline@1.8.9": {
       "name": "com.unity.timeline",
       "displayName": "Timeline",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.timeline@c58b4ee65782",
-      "fingerprint": "c58b4ee65782ad38338e29f7ee67787cb6998f04",
-      "editorCompatibility": "2019.3.0a1",
-      "version": "1.8.7",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.timeline@6b9e48457ddb",
+      "fingerprint": "6b9e48457ddb4f64813d77fd77efc79a8f3102ae",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.8.9",
       "source": "registry",
       "testable": false
     },
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
       "displayName": "Unity UI",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ugui@24b10291b18f",
-      "fingerprint": "24b10291b18f65e937b22d041c48712033f29449",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.ugui@e375ff18e90f",
+      "fingerprint": "e375ff18e90f823f9c3d4ffbc1532d6cde85ed48",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
       "source": "builtin",
       "testable": false
     },
-    "com.unity.visualscripting@1.9.5": {
+    "com.unity.visualscripting@1.9.7": {
       "name": "com.unity.visualscripting",
       "displayName": "Visual Scripting",
-      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.visualscripting@1b53f46e931b",
-      "fingerprint": "1b53f46e931bea668e53f1feb0ac9138170c9455",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.visualscripting@6279e2b7c485",
+      "fingerprint": "6279e2b7c4858e56cca7f367cd38c49ef66778c9",
       "editorCompatibility": "2021.3.0a1",
-      "version": "1.9.5",
+      "version": "1.9.7",
       "source": "registry",
       "testable": false
     },
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
       "displayName": "Accessibility",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.accessibility",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.accessibility",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -329,7 +319,7 @@
     "com.unity.modules.ai@1.0.0": {
       "name": "com.unity.modules.ai",
       "displayName": "AI",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ai",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ai",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -337,7 +327,7 @@
     "com.unity.modules.androidjni@1.0.0": {
       "name": "com.unity.modules.androidjni",
       "displayName": "Android JNI",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.androidjni",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.androidjni",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -345,7 +335,7 @@
     "com.unity.modules.animation@1.0.0": {
       "name": "com.unity.modules.animation",
       "displayName": "Animation",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.animation",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.animation",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -353,7 +343,7 @@
     "com.unity.modules.assetbundle@1.0.0": {
       "name": "com.unity.modules.assetbundle",
       "displayName": "Asset Bundle",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.assetbundle",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.assetbundle",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -361,7 +351,7 @@
     "com.unity.modules.audio@1.0.0": {
       "name": "com.unity.modules.audio",
       "displayName": "Audio",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.audio",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.audio",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -369,7 +359,7 @@
     "com.unity.modules.cloth@1.0.0": {
       "name": "com.unity.modules.cloth",
       "displayName": "Cloth",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.cloth",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.cloth",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -377,7 +367,7 @@
     "com.unity.modules.director@1.0.0": {
       "name": "com.unity.modules.director",
       "displayName": "Director",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.director",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.director",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -385,7 +375,7 @@
     "com.unity.modules.hierarchycore@1.0.0": {
       "name": "com.unity.modules.hierarchycore",
       "displayName": "Hierarchy Core",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.hierarchycore",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.hierarchycore",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -393,7 +383,7 @@
     "com.unity.modules.imageconversion@1.0.0": {
       "name": "com.unity.modules.imageconversion",
       "displayName": "Image Conversion",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imageconversion",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imageconversion",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -401,7 +391,7 @@
     "com.unity.modules.imgui@1.0.0": {
       "name": "com.unity.modules.imgui",
       "displayName": "IMGUI",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imgui",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imgui",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -409,7 +399,7 @@
     "com.unity.modules.jsonserialize@1.0.0": {
       "name": "com.unity.modules.jsonserialize",
       "displayName": "JSONSerialize",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.jsonserialize",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.jsonserialize",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -417,7 +407,7 @@
     "com.unity.modules.particlesystem@1.0.0": {
       "name": "com.unity.modules.particlesystem",
       "displayName": "Particle System",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.particlesystem",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.particlesystem",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -425,7 +415,7 @@
     "com.unity.modules.physics@1.0.0": {
       "name": "com.unity.modules.physics",
       "displayName": "Physics",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -433,7 +423,7 @@
     "com.unity.modules.physics2d@1.0.0": {
       "name": "com.unity.modules.physics2d",
       "displayName": "Physics 2D",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics2d",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics2d",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -441,7 +431,7 @@
     "com.unity.modules.screencapture@1.0.0": {
       "name": "com.unity.modules.screencapture",
       "displayName": "Screen Capture",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.screencapture",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.screencapture",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -449,7 +439,7 @@
     "com.unity.modules.subsystems@1.0.0": {
       "name": "com.unity.modules.subsystems",
       "displayName": "Subsystems",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.subsystems",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.subsystems",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -457,7 +447,7 @@
     "com.unity.modules.terrain@1.0.0": {
       "name": "com.unity.modules.terrain",
       "displayName": "Terrain",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrain",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrain",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -465,7 +455,7 @@
     "com.unity.modules.terrainphysics@1.0.0": {
       "name": "com.unity.modules.terrainphysics",
       "displayName": "Terrain Physics",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrainphysics",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrainphysics",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -473,7 +463,7 @@
     "com.unity.modules.tilemap@1.0.0": {
       "name": "com.unity.modules.tilemap",
       "displayName": "Tilemap",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.tilemap",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.tilemap",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -481,7 +471,7 @@
     "com.unity.modules.ui@1.0.0": {
       "name": "com.unity.modules.ui",
       "displayName": "UI",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ui",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ui",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -489,7 +479,7 @@
     "com.unity.modules.uielements@1.0.0": {
       "name": "com.unity.modules.uielements",
       "displayName": "UIElements",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.uielements",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.uielements",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -497,7 +487,7 @@
     "com.unity.modules.umbra@1.0.0": {
       "name": "com.unity.modules.umbra",
       "displayName": "Umbra",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.umbra",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.umbra",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -505,7 +495,7 @@
     "com.unity.modules.unityanalytics@1.0.0": {
       "name": "com.unity.modules.unityanalytics",
       "displayName": "Unity Analytics",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unityanalytics",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unityanalytics",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -513,7 +503,7 @@
     "com.unity.modules.unitywebrequest@1.0.0": {
       "name": "com.unity.modules.unitywebrequest",
       "displayName": "Unity Web Request",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequest",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequest",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -521,7 +511,7 @@
     "com.unity.modules.unitywebrequestassetbundle@1.0.0": {
       "name": "com.unity.modules.unitywebrequestassetbundle",
       "displayName": "Unity Web Request Asset Bundle",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestassetbundle",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestassetbundle",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -529,7 +519,7 @@
     "com.unity.modules.unitywebrequestaudio@1.0.0": {
       "name": "com.unity.modules.unitywebrequestaudio",
       "displayName": "Unity Web Request Audio",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestaudio",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestaudio",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -537,7 +527,7 @@
     "com.unity.modules.unitywebrequesttexture@1.0.0": {
       "name": "com.unity.modules.unitywebrequesttexture",
       "displayName": "Unity Web Request Texture",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequesttexture",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequesttexture",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -545,7 +535,7 @@
     "com.unity.modules.unitywebrequestwww@1.0.0": {
       "name": "com.unity.modules.unitywebrequestwww",
       "displayName": "Unity Web Request WWW",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestwww",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestwww",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -553,7 +543,7 @@
     "com.unity.modules.vehicles@1.0.0": {
       "name": "com.unity.modules.vehicles",
       "displayName": "Vehicles",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vehicles",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vehicles",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -561,7 +551,7 @@
     "com.unity.modules.video@1.0.0": {
       "name": "com.unity.modules.video",
       "displayName": "Video",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.video",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.video",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -569,7 +559,7 @@
     "com.unity.modules.vr@1.0.0": {
       "name": "com.unity.modules.vr",
       "displayName": "VR",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vr",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vr",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -577,7 +567,7 @@
     "com.unity.modules.wind@1.0.0": {
       "name": "com.unity.modules.wind",
       "displayName": "Wind",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.wind",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.wind",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -585,9 +575,19 @@
     "com.unity.modules.xr@1.0.0": {
       "name": "com.unity.modules.xr",
       "displayName": "XR",
-      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.0.35f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.xr",
+      "resolvedPath": "D:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.xr",
       "version": "1.0.0",
       "source": "builtin",
+      "testable": false
+    },
+    "com.unity.searcher@4.9.3": {
+      "name": "com.unity.searcher",
+      "displayName": "Searcher",
+      "resolvedPath": "D:\\Github\\FA25-Island-Survivor\\CS462 Project\\Library\\PackageCache\\com.unity.searcher@1e17ce91558d",
+      "fingerprint": "1e17ce91558d1d9127554adc03d275f39a7466a2",
+      "editorCompatibility": "2019.1.0a1",
+      "version": "4.9.3",
+      "source": "registry",
       "testable": false
     }
   }
