@@ -21,7 +21,7 @@ MonoBehaviour:
   magSize: 0
   bulletCount: 0
   ammo: 0
-  fireCooldown: 1
+  fireCooldown: 0.5
   isAutomatic: 0
   range: 3
   reloadCooldown: 0
