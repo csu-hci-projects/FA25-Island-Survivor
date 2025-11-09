@@ -8144,6 +8144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 0}
+  animator: {fileID: 0}
   playerCam: {fileID: 663522854}
   currentCooldown: 0
 --- !u!4 &2088675670 stripped
@@ -8648,7 +8649,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6112102999268106711, guid: fea1328176a6b74439f55fe49083dfab, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fea1328176a6b74439f55fe49083dfab, type: 3}

@@ -139,11 +139,13 @@ public class Player : MonoBehaviour
                             if (((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Melee)
                             {
                                 GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                                GetComponent<Gun>().animator = EquippedMesh.GetComponentInChildren<Animator>();
                                 GetComponent<Gun>().SwingWeapon();
                             }
                             else if (((WeaponObject)EquippedItem.itemObject).isAutomatic)
                             {
                                 GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                                GetComponent<Gun>().animator = EquippedMesh.GetComponentInChildren<Animator>();
                                 GetComponent<Gun>().FireWeapon();
                                 //play muzzle flash particle
                             }
@@ -201,6 +203,7 @@ public class Player : MonoBehaviour
                             if (!((WeaponObject)EquippedItem.itemObject).isAutomatic && ((WeaponObject)EquippedItem.itemObject).weaponType == weaponType.Ranged)
                             {
                                 GetComponent<Gun>().weapon = (WeaponObject)EquippedItem.itemObject;
+                                GetComponent<Gun>().animator = EquippedMesh.GetComponentInChildren<Animator>();
                                 GetComponent<Gun>().FireWeapon();
                                 //play muzzle flash particle
                             }

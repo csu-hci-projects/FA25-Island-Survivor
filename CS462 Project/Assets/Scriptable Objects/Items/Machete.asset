@@ -17,13 +17,13 @@ MonoBehaviour:
   playerHoldingObject: {fileID: 5530676279410795239, guid: 45e27e79aadd9864a80b960fcebdd430, type: 3}
   type: 1
   description: Machete
-  damage: 0
+  damage: 20
   magSize: 0
   bulletCount: 0
   ammo: 0
-  fireCooldown: 0
+  fireCooldown: 0.5
   isAutomatic: 0
-  range: 0
+  range: 3
   reloadCooldown: 0
   weaponType: 0
   attackLayer:

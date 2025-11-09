@@ -19,8 +19,8 @@ MonoBehaviour:
   description: SMG
   damage: 7
   magSize: 30
-  bulletCount: 30
-  ammo: 120
+  bulletCount: 120
+  ammo: 0
   fireCooldown: 0.1
   isAutomatic: 1
   range: 500

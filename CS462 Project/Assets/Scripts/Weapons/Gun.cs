@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class Gun : MonoBehaviour
 {
     public WeaponObject weapon;
+    public Animator animator;
     public Transform playerCam;
 
     public float currentCooldown;
@@ -14,6 +15,7 @@ public class Gun : MonoBehaviour
         if(currentCooldown <= 0)
         {
             currentCooldown = weapon.fireCooldown;
+            animator.SetTrigger("Swing");
             spawnRay();
         }
     }
@@ -26,6 +28,7 @@ public class Gun : MonoBehaviour
             if (weapon.bulletCount > 0)
             {
                 weapon.Use();
+                animator.SetTrigger("Fire");
                 spawnRay();
                 currentCooldown = weapon.fireCooldown;
             }

@@ -20,7 +20,7 @@ MonoBehaviour:
   damage: 10
   magSize: 8
   bulletCount: 8
-  ammo: 0
+  ammo: 80
   fireCooldown: 0.2
   isAutomatic: 0
   range: 2000
