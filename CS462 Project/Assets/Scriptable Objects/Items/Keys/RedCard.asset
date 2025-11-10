@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c5d09aa1929f340a50383885f8247f, type: 3}
+  m_Name: RedCard
+  m_EditorClassIdentifier: 
+  ID: 109
+  uiDisplay: {fileID: 21300000, guid: 8038bca3791d72a4c841bb049dba01ed, type: 3}
+  playerHoldingObject: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+  type: 4
+  description: Red Keycard
+  doorID: 9

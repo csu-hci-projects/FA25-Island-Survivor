@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5817409065152801966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382308389287869478, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_Name
+      value: Red_KeyCard Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5850682910992397827, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_Size.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5850682910992397827, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_Center.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9152708188547261037, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9152708188547261037, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9152708188547261037, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9205402008070065043}
+    - targetCorrespondingSourceObject: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7973976941025839110}
+    - targetCorrespondingSourceObject: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 453205084790648124}
+    - targetCorrespondingSourceObject: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 372885178773137859}
+  m_SourcePrefab: {fileID: 100100000, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+--- !u!1 &6827031944078166578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1010473007591188124, guid: 5355e77db91c7e5458df8733fcdc1ebc, type: 3}
+  m_PrefabInstance: {fileID: 5817409065152801966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9205402008070065043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827031944078166578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &7973976941025839110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827031944078166578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103271c63bc7e584594d4d6fcaa1ab40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundItem
+  item: {fileID: 11400000, guid: f8f7d8229c0d887449a7ef7dc2426571, type: 2}
+  amount: 1
+--- !u!114 &453205084790648124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827031944078166578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de632bc1c4c55424a9d798d2fb90929f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  message: PIckup KeyCard
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6827031944078166578}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!54 &372885178773137859
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827031944078166578}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
