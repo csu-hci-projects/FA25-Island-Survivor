@@ -487,6 +487,7 @@
 "Assets/Scripts/PlayerInteraction.cs"
 "Assets/Scripts/Projectile.cs"
 "Assets/Scripts/StaticInterface.cs"
+"Assets/Scripts/SunDial.cs"
 "Assets/Scripts/UserInterface.cs"
 "Assets/Scripts/Weapons/AmmoInterface.cs"
 "Assets/Scripts/Weapons/DamageGun.cs"
