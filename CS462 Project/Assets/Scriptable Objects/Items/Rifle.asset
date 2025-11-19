@@ -17,11 +17,11 @@ MonoBehaviour:
   playerHoldingObject: {fileID: 193540257151038129, guid: 5822bd11d34f599478d53fed99c84bd4, type: 3}
   type: 1
   description: Hunting Rifle
-  damage: 40
+  damage: 60
   magSize: 12
-  bulletCount: 12
-  ammo: 80
-  fireCooldown: 2
+  bulletCount: 7
+  ammo: 148
+  fireCooldown: 1
   isAutomatic: 0
   range: 5000
   reloadCooldown: 5

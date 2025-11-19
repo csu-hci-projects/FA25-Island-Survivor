@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c5d09aa1929f340a50383885f8247f, type: 3}
   m_Name: Shed Key
   m_EditorClassIdentifier: 
-  ID: 113
+  ID: 120
   uiDisplay: {fileID: 21300000, guid: 263561d3b40772f4aaeb9a58890e8c9f, type: 3}
   playerHoldingObject: {fileID: 957193454749583855, guid: 5ad379478b54dc84a911350eb3b5e144, type: 3}
   type: 4
   description: Shed Key
-  doorID: 13
+  doorID: 20

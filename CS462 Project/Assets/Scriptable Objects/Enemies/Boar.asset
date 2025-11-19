@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Boar
   m_EditorClassIdentifier: 
   EnemyHealth: {fileID: 11400000, guid: 9ecc3a6eebde56f438ac64361bdd3b7d, type: 2}
-  MoveSpeed: 15
+  MoveSpeed: 20
   damage: 5
   attackSpeed: 0.5

@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Locker_Closed
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de73c501faaeccc419cb95097b95665c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65,6 +69,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8068073526183931155, guid: de73c501faaeccc419cb95097b95665c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1384382391520233700}
+    - targetCorrespondingSourceObject: {fileID: -8068073526183931155, guid: de73c501faaeccc419cb95097b95665c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5677754778775357241}
     - targetCorrespondingSourceObject: {fileID: -6141589675508075667, guid: de73c501faaeccc419cb95097b95665c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2506126622354336983}
@@ -160,3 +167,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a64ee6bc466e8134c9c25270f1329a4f, type: 2}
   message: Press Left Click to Use Locker Key
   winScreen: {fileID: 0}
+--- !u!114 &5677754778775357241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605069996692265837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3be34c73c344fd48b0c7f1ff9566e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plane
+  parts:
+  - {fileID: 7605069996692265837}

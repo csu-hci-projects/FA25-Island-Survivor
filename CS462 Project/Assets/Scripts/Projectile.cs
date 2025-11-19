@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
         {
             other.gameObject.GetComponent<SpeedManager>().ApplyPoison(projectile.damage, projectile.time);
         }
-        if(!other.gameObject.CompareTag("Enemy"))
+        if (!other.gameObject.CompareTag("Enemy") && !other.gameObject.CompareTag("Desert"))
         {
             Destroy(gameObject);
         }

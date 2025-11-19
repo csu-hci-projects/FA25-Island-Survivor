@@ -3,18 +3,20 @@ using UnityEngine;
 public class EnemyActor : MonoBehaviour
 {
     public EnemyObject enemyType;
+    private int currentHealth = 1;
     public int[] probabilities = new int[5];
     public GameObject[] Prefabs = new GameObject[5];
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        enemyType.EnemyHealth.ResetHP();
+        currentHealth = enemyType.EnemyHealth.maxHealth;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (enemyType.EnemyHealth.currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             for (int i = 0; i < Prefabs.Length; i++)
             {
@@ -27,5 +29,14 @@ public class EnemyActor : MonoBehaviour
             }
             Destroy(gameObject);
         }
+    }
+
+    public void dealDamage(int damage)
+    {
+        currentHealth -= damage;
+    }
+    public int getHealth()
+    {
+        return currentHealth;
     }
 }

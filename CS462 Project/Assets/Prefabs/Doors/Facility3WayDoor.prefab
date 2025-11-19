@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Facility3WayDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e1584f0c54074484c863a4854c4c9d9a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81,7 +85,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e1584f0c54074484c863a4854c4c9d9a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4043604842815191008}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e1584f0c54074484c863a4854c4c9d9a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2267659684976801069}
   m_SourcePrefab: {fileID: 100100000, guid: e1584f0c54074484c863a4854c4c9d9a, type: 3}
+--- !u!1 &1354623888305439785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5162820104835090806, guid: e1584f0c54074484c863a4854c4c9d9a, type: 3}
+  m_PrefabInstance: {fileID: 6154893158674369887}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6461534506523930638 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e1584f0c54074484c863a4854c4c9d9a, type: 3}
@@ -147,3 +159,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f8f7d8229c0d887449a7ef7dc2426571, type: 2}
   message: Press Left Click to Use Keys
   winScreen: {fileID: 0}
+--- !u!114 &2267659684976801069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6461534506523930638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3be34c73c344fd48b0c7f1ff9566e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plane
+  parts:
+  - {fileID: 1354623888305439785}
+  - {fileID: 1354623888305439785}
+  - {fileID: 1354623888305439785}

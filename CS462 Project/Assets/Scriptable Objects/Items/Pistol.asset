@@ -17,7 +17,7 @@ MonoBehaviour:
   playerHoldingObject: {fileID: 1536719038068673371, guid: e07961c36e6163a4b8f8131de712659a, type: 3}
   type: 1
   description: Baretta Pistol
-  damage: 10
+  damage: 18
   magSize: 8
   bulletCount: 8
   ammo: 80

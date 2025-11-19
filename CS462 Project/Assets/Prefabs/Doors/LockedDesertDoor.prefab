@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2830926243518634834}
   - component: {fileID: 3902620571761413378}
   - component: {fileID: 4944444786862877020}
+  - component: {fileID: 4113124736668286655}
   m_Layer: 8
   m_Name: LockedDesertDoor
   m_TagString: Untagged
@@ -145,9 +146,23 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.013283717, y: 0.020907983, z: 0.005}
   m_Center: {x: 0.0066402513, y: 0.0105699785, z: -0.00012331337}
+--- !u!114 &4113124736668286655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939235251218402198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3be34c73c344fd48b0c7f1ff9566e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plane
+  parts:
+  - {fileID: 2939235251218402198}

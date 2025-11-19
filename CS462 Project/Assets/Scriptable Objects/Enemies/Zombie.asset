@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Zombie
   m_EditorClassIdentifier: 
   EnemyHealth: {fileID: 11400000, guid: c4b7a41a3d43b3f46ada745e3010d20a, type: 2}
-  MoveSpeed: 5
-  damage: 10
+  MoveSpeed: 13
+  damage: 14
   attackSpeed: 1

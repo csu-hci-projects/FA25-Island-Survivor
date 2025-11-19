@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShedDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8119b1440ab70ce45a99bdf09cd9883f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81,6 +85,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8119b1440ab70ce45a99bdf09cd9883f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4062107966947542214}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8119b1440ab70ce45a99bdf09cd9883f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -776185867319789225}
   m_SourcePrefab: {fileID: 100100000, guid: 8119b1440ab70ce45a99bdf09cd9883f, type: 3}
 --- !u!1 &7156093678169133006 stripped
 GameObject:
@@ -145,3 +152,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a967fed4dfe30ae43b1728d77ad6ad2f, type: 2}
   message: Press Left Click to Use Keys
   winScreen: {fileID: 0}
+--- !u!114 &-776185867319789225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7156093678169133006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3be34c73c344fd48b0c7f1ff9566e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plane
+  parts:
+  - {fileID: 7156093678169133006}

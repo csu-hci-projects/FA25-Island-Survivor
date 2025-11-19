@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CabinDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 16df9394fde67c24d992d14ee2678be9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69,7 +73,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 16df9394fde67c24d992d14ee2678be9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4101790913559154396}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 16df9394fde67c24d992d14ee2678be9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8351804987011803163}
   m_SourcePrefab: {fileID: 100100000, guid: 16df9394fde67c24d992d14ee2678be9, type: 3}
+--- !u!1 &2339677960055316473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5941457476853523155, guid: 16df9394fde67c24d992d14ee2678be9, type: 3}
+  m_PrefabInstance: {fileID: 8218076108530728234}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9136978443648630907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 16df9394fde67c24d992d14ee2678be9, type: 3}
@@ -134,3 +146,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e9895ac863048f342ac809ec936fbcc2, type: 3}
+--- !u!114 &8351804987011803163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9136978443648630907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3be34c73c344fd48b0c7f1ff9566e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Plane
+  parts:
+  - {fileID: 2339677960055316473}

@@ -50,8 +50,8 @@ public class Gun : MonoBehaviour
         if (Physics.Raycast(gunRay, out RaycastHit hitInfo, weapon.range))
         {
             if (hitInfo.collider.gameObject.TryGetComponent(out EnemyActor enemy)){
-                Debug.Log("Enemy Hit");
-                enemy.enemyType.EnemyHealth.currentHealth -= weapon.damage;
+                enemy.dealDamage(weapon.damage);
+                Debug.Log("Enemy Hit. Current Health: " + enemy.getHealth());
             }
 
         }

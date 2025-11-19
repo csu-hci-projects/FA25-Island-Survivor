@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b59c7beff2d71c4c820ef55636ab65d, type: 3}
   m_Name: SMGPickup
   m_EditorClassIdentifier: 
-  ammoCount: 30
+  ammoCount: 80
   weapon: {fileID: 11400000, guid: d6244b5d1d262b0468313f3c8a567b50, type: 2}
