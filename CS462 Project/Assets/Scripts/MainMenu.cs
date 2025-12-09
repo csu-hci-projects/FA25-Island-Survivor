@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainMenu;
     public void QuitGame()
     {
         #if UNITY_EDITOR
@@ -18,5 +19,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("GameScene");
         UnityEngine.Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void ToggleControls()
+    {
+        this.gameObject.SetActive(false);
+        mainMenu.SetActive(true);
     }
 }

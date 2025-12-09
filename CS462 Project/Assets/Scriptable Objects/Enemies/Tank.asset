@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tank
   m_EditorClassIdentifier: 
   EnemyHealth: {fileID: 11400000, guid: cfb3b41d82549fc408b753897b3774fa, type: 2}
-  MoveSpeed: 10
+  MoveSpeed: 15
   damage: 30
   attackSpeed: 2

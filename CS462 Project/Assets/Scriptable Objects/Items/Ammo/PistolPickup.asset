@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b59c7beff2d71c4c820ef55636ab65d, type: 3}
   m_Name: PistolPickup
   m_EditorClassIdentifier: 
-  ammoCount: 32
+  ammoCount: 20
   weapon: {fileID: 11400000, guid: 6a63982b4d2306941b088abce1dbb84b, type: 2}

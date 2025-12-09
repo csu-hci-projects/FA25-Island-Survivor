@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Snake
   m_EditorClassIdentifier: 
   EnemyHealth: {fileID: 11400000, guid: eb1af4991f150d64eb6cc4952af0919c, type: 2}
-  MoveSpeed: 10
+  MoveSpeed: 16
   damage: 7
   attackSpeed: 2

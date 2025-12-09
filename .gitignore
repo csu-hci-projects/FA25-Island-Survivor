@@ -100,3 +100,5 @@ InitTestScene*.unity*
 
 libburst-llvm-16.dylib
 ArtifactDB
+sharedassets1.assets.resS
+*.zip

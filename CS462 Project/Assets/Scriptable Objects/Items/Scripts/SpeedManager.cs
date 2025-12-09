@@ -1,8 +1,6 @@
 using StarterAssets;
 using UnityEngine;
 using System.Collections;
-using static UnityEditor.Progress;
-using UnityEditor.ShaderGraph.Internal;
 
 public class SpeedManager : MonoBehaviour
 {
